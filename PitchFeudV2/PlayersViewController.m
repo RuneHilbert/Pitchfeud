@@ -108,14 +108,12 @@
 
 -(void)StartEndTouch:(UILongPressGestureRecognizer *)gestureRecognizer{
     
-    if(!buyPlayerViewIsUp) return;
+    if(!buyPlayerViewIsUp || isDraggingPlayer) return;
     
     MainViewController *mv = (MainViewController*)[self parentViewController];
     UIView *playerView = gestureRecognizer.view;
   
     if([gestureRecognizer state] == UIGestureRecognizerStateBegan){
-        
-        if(isDraggingPlayer)return;
         
         self.buyPlayersView.scrollView.scrollEnabled = NO;
         isDraggingPlayer = YES;

@@ -11,7 +11,11 @@
 #import "PlayerManager.h"
 #import "LineView.h"
 
-@interface PitchViewController : UIViewController
+@interface PitchViewController : UIViewController{
+    
+    NSNumber *offsetTimestamp;
+    NSNumber *limitTimestamp;
+}
 
 @property (nonatomic, strong) IBOutlet UIView *pitchView;
 @property (nonatomic, strong) IBOutlet UIView *statsView;

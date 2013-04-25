@@ -537,8 +537,8 @@
 
 -(void)ReceiveEventData{
     
-    NSNumber *offsetTimestamp;
-    NSNumber *limitTimestamp;
+   // NSNumber *offsetTimestamp;
+   // NSNumber *limitTimestamp;
     offsetTimestamp = [[NSUserDefaults standardUserDefaults] objectForKey:@"offsetTimestamp"];
     
     if(offsetTimestamp==nil){//if no previous time was saved, start from 0
@@ -547,7 +547,7 @@
     } else if (prevRequestSucceed) {//only save the new time if we actually got data for the previous time
         offsetTimestamp = [NSNumber numberWithInt:([offsetTimestamp intValue]+60)];
     }
-    [[NSUserDefaults standardUserDefaults] setObject:offsetTimestamp forKey:@"offsetTimestamp"];
+   // [[NSUserDefaults standardUserDefaults] setObject:offsetTimestamp forKey:@"offsetTimestamp"];
     
     limitTimestamp = [[NSUserDefaults standardUserDefaults] objectForKey:@"limitTimestamp"];
     
@@ -556,7 +556,7 @@
     } else if (prevRequestSucceed) {
         limitTimestamp = [NSNumber numberWithInt:([limitTimestamp intValue]+60)];
     }
-    [[NSUserDefaults standardUserDefaults] setObject:limitTimestamp forKey:@"limitTimestamp"];
+  //  [[NSUserDefaults standardUserDefaults] setObject:limitTimestamp forKey:@"limitTimestamp"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     [[ConnectionManager Instance]GetEventsWithMatchID:1 AndOffsetTimestamp:[offsetTimestamp integerValue] AndLimitTimestamp:[limitTimestamp integerValue]];
