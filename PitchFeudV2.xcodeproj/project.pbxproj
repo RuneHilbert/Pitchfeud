@@ -13,6 +13,7 @@
 		D02AC09F170A160E00F9F23C /* PlayerButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D02AC09E170A160E00F9F23C /* PlayerButtonViewController.m */; };
 		D02AD1BC16FC6B460012285C /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D02AD1BB16FC6B460012285C /* ConnectionManager.m */; };
 		D02AD1C016FC6D530012285C /* NSURLConnectionWithTag.m in Sources */ = {isa = PBXBuildFile; fileRef = D02AD1BF16FC6D530012285C /* NSURLConnectionWithTag.m */; };
+		D032DB9C172937E400B6F191 /* Pitch2.png in Resources */ = {isa = PBXBuildFile; fileRef = D032DB9B172937E400B6F191 /* Pitch2.png */; };
 		D03CC1CD16FF41B2003702B5 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = D03CC1CC16FF41B2003702B5 /* LineView.m */; };
 		D03CC1CE16FF4297003702B5 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = D03CC1CC16FF41B2003702B5 /* LineView.m */; };
 		D03CC1D116FF56C0003702B5 /* PitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03CC1D016FF56BF003702B5 /* PitchViewController.m */; };
@@ -170,6 +171,7 @@
 		D02AD1BB16FC6B460012285C /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
 		D02AD1BE16FC6D530012285C /* NSURLConnectionWithTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionWithTag.h; sourceTree = "<group>"; };
 		D02AD1BF16FC6D530012285C /* NSURLConnectionWithTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionWithTag.m; sourceTree = "<group>"; };
+		D032DB9B172937E400B6F191 /* Pitch2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pitch2.png; sourceTree = "<group>"; };
 		D03CC1CB16FF41B2003702B5 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
 		D03CC1CC16FF41B2003702B5 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
 		D03CC1CF16FF56BF003702B5 /* PitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PitchViewController.h; sourceTree = "<group>"; };
@@ -455,6 +457,7 @@
 			children = (
 				D03CC1D216FF6326003702B5 /* EventOnPitch.png */,
 				D03CC1D316FF6326003702B5 /* EventOnPitch@2x.png */,
+				D032DB9B172937E400B6F191 /* Pitch2.png */,
 				F500C92416FCBEBA007B481E /* Pitch.png */,
 				DDC3DE9417213301004EFBD4 /* Player.png */,
 				DD6C81CD1703862F00EF3C9C /* PlayerBWBlack.png */,
@@ -919,6 +922,7 @@
 				DDC3DEE1172180FB004EFBD4 /* GameWindowTeamBackground.png in Resources */,
 				DDC3DEE3172182A4004EFBD4 /* GameWindowButtonBuyPlayer.png in Resources */,
 				DDF833D91728416300ED39BF /* CreateBet.png in Resources */,
+				D032DB9C172937E400B6F191 /* Pitch2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
