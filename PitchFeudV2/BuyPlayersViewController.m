@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Never Kill A Customer. All rights reserved.
 //
 
-// loll
-//jdklsjfksdjfælksdjfjkjhkcbfh
 #import "BuyPlayersViewController.h"
 
 @interface BuyPlayersViewController ()
