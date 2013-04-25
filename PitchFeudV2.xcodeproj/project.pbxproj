@@ -1,0 +1,1198 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D00EA0EE1700A54B00D0EFCC /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D00EA0ED1700A54B00D0EFCC /* PlayerManager.m */; };
+		D00EA0F11700A79800D0EFCC /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00EA0F01700A79800D0EFCC /* PlayersViewController.m */; };
+		D02617A5170B0A6900DD1CE7 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = D02617A4170B0A6900DD1CE7 /* Player.m */; };
+		D02AC09F170A160E00F9F23C /* PlayerButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D02AC09E170A160E00F9F23C /* PlayerButtonViewController.m */; };
+		D02AD1BC16FC6B460012285C /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D02AD1BB16FC6B460012285C /* ConnectionManager.m */; };
+		D02AD1C016FC6D530012285C /* NSURLConnectionWithTag.m in Sources */ = {isa = PBXBuildFile; fileRef = D02AD1BF16FC6D530012285C /* NSURLConnectionWithTag.m */; };
+		D03CC1CD16FF41B2003702B5 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = D03CC1CC16FF41B2003702B5 /* LineView.m */; };
+		D03CC1CE16FF4297003702B5 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = D03CC1CC16FF41B2003702B5 /* LineView.m */; };
+		D03CC1D116FF56C0003702B5 /* PitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03CC1D016FF56BF003702B5 /* PitchViewController.m */; };
+		D03CC1D416FF6326003702B5 /* EventOnPitch.png in Resources */ = {isa = PBXBuildFile; fileRef = D03CC1D216FF6326003702B5 /* EventOnPitch.png */; };
+		D03CC1D516FF6326003702B5 /* EventOnPitch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D03CC1D316FF6326003702B5 /* EventOnPitch@2x.png */; };
+		DD0426B0171C707600F78C39 /* CreateBetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0426AF171C707600F78C39 /* CreateBetViewController.m */; };
+		DD0426B3171C708200F78C39 /* OpenBetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0426B2171C708200F78C39 /* OpenBetsViewController.m */; };
+		DD0426B6171C753F00F78C39 /* BetsPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0426B5171C753E00F78C39 /* BetsPopUpViewController.m */; };
+		DD0426B9171C7ACF00F78C39 /* BetsScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0426B8171C7ACF00F78C39 /* BetsScrollViewController.m */; };
+		DD0426BC171C821900F78C39 /* OpenBetsScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0426BB171C821900F78C39 /* OpenBetsScrollViewController.m */; };
+		DD0426C0171C87AA00F78C39 /* ChallengesList.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0426BF171C87AA00F78C39 /* ChallengesList.png */; };
+		DD0426C2171C87DF00F78C39 /* ChallengesTop.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0426C1171C87DF00F78C39 /* ChallengesTop.png */; };
+		DD0426C5171C87EB00F78C39 /* ChallengesCreateNewButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0426C3171C87EB00F78C39 /* ChallengesCreateNewButton.png */; };
+		DD0426C6171C87EB00F78C39 /* ChallengesOpenChallengesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0426C4171C87EB00F78C39 /* ChallengesOpenChallengesButton.png */; };
+		DD6AC7CB171713D200585921 /* MatchesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7C9171713D200585921 /* MatchesButton.png */; };
+		DD6AC7CE1717166E00585921 /* MatchesTop.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7CD1717166E00585921 /* MatchesTop.png */; };
+		DD6AC7D21717293600585921 /* FriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC7D11717293600585921 /* FriendsListViewController.m */; };
+		DD6AC7D617172B3300585921 /* FriendsList.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7D317172B3300585921 /* FriendsList.png */; };
+		DD6AC7D717172B3300585921 /* FriendsPaul.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7D417172B3300585921 /* FriendsPaul.png */; };
+		DD6AC7D817172B3300585921 /* FriendsTop.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7D517172B3300585921 /* FriendsTop.png */; };
+		DD6AC7DB1717308900585921 /* SettingsList.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7D91717308900585921 /* SettingsList.png */; };
+		DD6AC7DC1717308900585921 /* SettingsTop.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7DA1717308900585921 /* SettingsTop.png */; };
+		DD6AC7E01717312600585921 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC7DF1717312600585921 /* SettingsViewController.m */; };
+		DD6AC7E31717318B00585921 /* LeaguesList.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7E11717318B00585921 /* LeaguesList.png */; };
+		DD6AC7E41717318B00585921 /* LeaguesTop.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7E21717318B00585921 /* LeaguesTop.png */; };
+		DD6AC7E61717348E00585921 /* GameWindowPlayersBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7E51717348E00585921 /* GameWindowPlayersBackground.png */; };
+		DD6AC7ED171736B400585921 /* MainMenuProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7EB171736B400585921 /* MainMenuProfile.png */; };
+		DD6AC7EE171736B400585921 /* MainMenuTop.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7EC171736B400585921 /* MainMenuTop.png */; };
+		DD6AC7F217173A7100585921 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7F117173A7100585921 /* Icon.png */; };
+		DD6AC7F417173B4100585921 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7F317173B4100585921 /* Default@2x.png */; };
+		DD6AC7F617173BBB00585921 /* Icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7F517173BBB00585921 /* Icon_57.png */; };
+		DD6C81C41703827700EF3C9C /* BuyMenuBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6C81C31703827700EF3C9C /* BuyMenuBackground.png */; };
+		DD6C81C71703839200EF3C9C /* BuyPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6C81C61703839200EF3C9C /* BuyPlayersViewController.m */; };
+		DD6C81CA1703858E00EF3C9C /* PlayersArraysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6C81C91703858E00EF3C9C /* PlayersArraysViewController.m */; };
+		DD6C81D11703862F00EF3C9C /* PlayerBWBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6C81CD1703862F00EF3C9C /* PlayerBWBlack.png */; };
+		DD6C81D21703862F00EF3C9C /* PlayerBWBrown.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6C81CE1703862F00EF3C9C /* PlayerBWBrown.png */; };
+		DD6C81D31703862F00EF3C9C /* PlayerRedBlond.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6C81CF1703862F00EF3C9C /* PlayerRedBlond.png */; };
+		DD6C81D41703862F00EF3C9C /* PlayerRedBrown.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6C81D01703862F00EF3C9C /* PlayerRedBrown.png */; };
+		DD6C81D51703873E00EF3C9C /* PlayersArraysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6C81C91703858E00EF3C9C /* PlayersArraysViewController.m */; };
+		DD7578C417132576004B0D3E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7578C317132575004B0D3E /* MenuViewController.m */; };
+		DDBB90B11716F78A00FEF71B /* MenuScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB90B01716F78A00FEF71B /* MenuScrollViewController.m */; };
+		DDBB90DB17170CF500FEF71B /* MainMenuCommunityUpdates.png in Resources */ = {isa = PBXBuildFile; fileRef = DDBB90DA17170CF500FEF71B /* MainMenuCommunityUpdates.png */; };
+		DDBB90DD1717115300FEF71B /* accid___.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDBB90DC1717115300FEF71B /* accid___.ttf */; };
+		DDC3DE9517213301004EFBD4 /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DE9417213301004EFBD4 /* Player.png */; };
+		DDC3DEB117216D6B004EFBD4 /* GameWindowRight2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DEB017216D6B004EFBD4 /* GameWindowRight2.png */; };
+		DDC3DEB317216D91004EFBD4 /* GameWindowBetsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DEB217216D91004EFBD4 /* GameWindowBetsBackground.png */; };
+		DDC3DEB517216DAB004EFBD4 /* GameWindowButtonCreateBet.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DEB417216DAB004EFBD4 /* GameWindowButtonCreateBet.png */; };
+		DDC3DEBC1721702F004EFBD4 /* GameWindowButtonMarket.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DEBA1721702F004EFBD4 /* GameWindowButtonMarket.png */; };
+		DDC3DEBD1721702F004EFBD4 /* GameWindowButtonMyBets.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DEBB1721702F004EFBD4 /* GameWindowButtonMyBets.png */; };
+		DDC3DEC717217623004EFBD4 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3DEC617217623004EFBD4 /* CollectionViewController.m */; };
+		DDC3DECA172176B6004EFBD4 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3DEC9172176B6004EFBD4 /* CollectionViewCell.m */; };
+		DDC3DECC172178D9004EFBD4 /* GameWindowButtonMyBetsClicked.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DECB172178D9004EFBD4 /* GameWindowButtonMyBetsClicked.png */; };
+		DDC3DED617217953004EFBD4 /* GameWindowBet08.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DECE17217953004EFBD4 /* GameWindowBet08.png */; };
+		DDC3DED717217953004EFBD4 /* GameWindowBet07.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DECF17217953004EFBD4 /* GameWindowBet07.png */; };
+		DDC3DED817217953004EFBD4 /* GameWindowBet06.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DED017217953004EFBD4 /* GameWindowBet06.png */; };
+		DDC3DED917217953004EFBD4 /* GameWindowBet05.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DED117217953004EFBD4 /* GameWindowBet05.png */; };
+		DDC3DEDA17217953004EFBD4 /* GameWindowBet04.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DED217217953004EFBD4 /* GameWindowBet04.png */; };
+		DDC3DEDB17217953004EFBD4 /* GameWindowBet03.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DED317217953004EFBD4 /* GameWindowBet03.png */; };
+		DDC3DEDC17217953004EFBD4 /* GameWindowBet02.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DED417217953004EFBD4 /* GameWindowBet02.png */; };
+		DDC3DEDD17217953004EFBD4 /* GameWindowBet01.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DED517217953004EFBD4 /* GameWindowBet01.png */; };
+		DDC3DEDF17217F63004EFBD4 /* GameWindowTop2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DEDE17217F63004EFBD4 /* GameWindowTop2.png */; };
+		DDC3DEE1172180FB004EFBD4 /* GameWindowTeamBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DEE0172180FB004EFBD4 /* GameWindowTeamBackground.png */; };
+		DDC3DEE3172182A4004EFBD4 /* GameWindowButtonBuyPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC3DEE2172182A4004EFBD4 /* GameWindowButtonBuyPlayer.png */; };
+		DDD88EDB1718550C006E0F16 /* LeagueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD88EDA1718550C006E0F16 /* LeagueViewController.m */; };
+		DDD88EDD1718587E006E0F16 /* SplashScreen02.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD88EDC1718587E006E0F16 /* SplashScreen02.png */; };
+		DDD88EDF17185CA5006E0F16 /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD88EDE17185CA5006E0F16 /* SplashScreen.png */; };
+		DDD88EE317185E7A006E0F16 /* LeagueList02.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD88EE117185E7A006E0F16 /* LeagueList02.png */; };
+		DDD88EE417185E7A006E0F16 /* LeagueTop02.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD88EE217185E7A006E0F16 /* LeagueTop02.png */; };
+		DDD88EE7171864F9006E0F16 /* LeagueListHalf01.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD88EE5171864F9006E0F16 /* LeagueListHalf01.png */; };
+		DDD88EE8171864F9006E0F16 /* LeagueListHalf02.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD88EE6171864F9006E0F16 /* LeagueListHalf02.png */; };
+		DDD99AE81719894E00DDD595 /* MainMenuButton00Resume.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99ADF1719894E00DDD595 /* MainMenuButton00Resume.png */; };
+		DDD99AE91719894E00DDD595 /* MainMenuButton01Matches.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99AE01719894E00DDD595 /* MainMenuButton01Matches.png */; };
+		DDD99AEA1719894E00DDD595 /* MainMenuButton02Friends.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99AE11719894E00DDD595 /* MainMenuButton02Friends.png */; };
+		DDD99AEB1719894E00DDD595 /* MainMenuButton03Leagues.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99AE21719894E00DDD595 /* MainMenuButton03Leagues.png */; };
+		DDD99AEC1719894E00DDD595 /* MainMenuButton04Bets.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99AE31719894E00DDD595 /* MainMenuButton04Bets.png */; };
+		DDD99AED1719894E00DDD595 /* MainMenuButton05Shop.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99AE41719894E00DDD595 /* MainMenuButton05Shop.png */; };
+		DDD99AEE1719894E00DDD595 /* MainMenuButton06Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99AE51719894E00DDD595 /* MainMenuButton06Settings.png */; };
+		DDD99AEF1719894E00DDD595 /* MainMenuButton07SignOut.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99AE61719894E00DDD595 /* MainMenuButton07SignOut.png */; };
+		DDD99AF01719894E00DDD595 /* MainMenuButton08Leaderboards.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99AE71719894E00DDD595 /* MainMenuButton08Leaderboards.png */; };
+		DDD99AF2171991D400DDD595 /* Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99AF1171991D400DDD595 /* Profile.png */; };
+		DDEE46531712A6600000ABFB /* BetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEE46521712A6600000ABFB /* BetsViewController.m */; };
+		DDF833D91728416300ED39BF /* CreateBet.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF833D81728416300ED39BF /* CreateBet.png */; };
+		F500C92516FCBEBA007B481E /* Pitch.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C92416FCBEBA007B481E /* Pitch.png */; };
+		F500C93E16FCCB2A007B481E /* ButtonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C92616FCCB29007B481E /* ButtonBack.png */; };
+		F500C93F16FCCB2A007B481E /* ButtonBetDetails.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C92716FCCB29007B481E /* ButtonBetDetails.png */; };
+		F500C94016FCCB2A007B481E /* ButtonBrowseBets.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C92816FCCB29007B481E /* ButtonBrowseBets.png */; };
+		F500C94216FCCB2A007B481E /* ButtonCancel.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C92A16FCCB29007B481E /* ButtonCancel.png */; };
+		F500C94316FCCB2A007B481E /* ButtonCancelClicked.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C92B16FCCB29007B481E /* ButtonCancelClicked.png */; };
+		F500C94416FCCB2A007B481E /* ButtonChat.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C92C16FCCB2A007B481E /* ButtonChat.png */; };
+		F500C94516FCCB2A007B481E /* ButtonCreateBet.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C92D16FCCB2A007B481E /* ButtonCreateBet.png */; };
+		F500C94616FCCB2A007B481E /* ButtonMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C92E16FCCB2A007B481E /* ButtonMenu.png */; };
+		F500C94716FCCB2A007B481E /* ButtonQuestionsClicked.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C92F16FCCB2A007B481E /* ButtonQuestionsClicked.png */; };
+		F500C94816FCCB2A007B481E /* ButtonRefreshList.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93016FCCB2A007B481E /* ButtonRefreshList.png */; };
+		F500C94916FCCB2A007B481E /* ButtonSubmitBet.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93116FCCB2A007B481E /* ButtonSubmitBet.png */; };
+		F500C94A16FCCB2A007B481E /* ButtonTeamStats.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93216FCCB2A007B481E /* ButtonTeamStats.png */; };
+		F500C94B16FCCB2A007B481E /* ButtonTeamStatsClicked.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93316FCCB2A007B481E /* ButtonTeamStatsClicked.png */; };
+		F500C94C16FCCB2A007B481E /* ButtonWagers.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93416FCCB2A007B481E /* ButtonWagers.png */; };
+		F500C94E16FCCB2A007B481E /* GameWindowMiddle.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93616FCCB2A007B481E /* GameWindowMiddle.png */; };
+		F500C94F16FCCB2A007B481E /* GameWindowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93716FCCB2A007B481E /* GameWindowRight.png */; };
+		F500C95016FCCB2A007B481E /* MainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93816FCCB2A007B481E /* MainMenu.png */; };
+		F500C95116FCCB2A007B481E /* PopupBet.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93916FCCB2A007B481E /* PopupBet.png */; };
+		F500C95216FCCB2A007B481E /* PopupSelectCategory.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93A16FCCB2A007B481E /* PopupSelectCategory.png */; };
+		F500C95316FCCB2A007B481E /* PopupTeamStats.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93B16FCCB2A007B481E /* PopupTeamStats.png */; };
+		F500C95416FCCB2A007B481E /* Topbar.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93C16FCCB2A007B481E /* Topbar.png */; };
+		F500C95516FCCB2A007B481E /* TopbarMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C93D16FCCB2A007B481E /* TopbarMenu.png */; };
+		F500C96216FCD0F6007B481E /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F500C96116FCD0F6007B481E /* InitViewController.m */; };
+		F500C96316FCD0F6007B481E /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F500C96116FCD0F6007B481E /* InitViewController.m */; };
+		F500C96816FCD19F007B481E /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F500C96516FCD19F007B481E /* ECSlidingViewController.m */; };
+		F500C96916FCD19F007B481E /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F500C96516FCD19F007B481E /* ECSlidingViewController.m */; };
+		F500C96A16FCD19F007B481E /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F500C96716FCD19F007B481E /* UIImage+ImageWithUIView.m */; };
+		F500C96B16FCD19F007B481E /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F500C96716FCD19F007B481E /* UIImage+ImageWithUIView.m */; };
+		F500C97216FCD261007B481E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F500C97116FCD261007B481E /* MainViewController.m */; };
+		F500C97316FCD261007B481E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F500C97116FCD261007B481E /* MainViewController.m */; };
+		F5618D1716FDDB1C00CC07C9 /* MenuNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5618D1616FDDB1C00CC07C9 /* MenuNavViewController.m */; };
+		F5618D1A16FDDB3100CC07C9 /* ChatNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5618D1916FDDB3100CC07C9 /* ChatNavViewController.m */; };
+		F5618D2316FDDE3900CC07C9 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5618D2216FDDE3900CC07C9 /* ChatTableViewController.m */; };
+		F5618D2C16FDE74100CC07C9 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5618D2B16FDE74100CC07C9 /* BasicViewController.m */; };
+		F57E0F7916FB45EB00E2E803 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57E0F7816FB45EB00E2E803 /* UIKit.framework */; };
+		F57E0F7B16FB45EB00E2E803 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57E0F7A16FB45EB00E2E803 /* Foundation.framework */; };
+		F57E0F7D16FB45EB00E2E803 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57E0F7C16FB45EB00E2E803 /* CoreGraphics.framework */; };
+		F57E0F8316FB45EB00E2E803 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F57E0F8116FB45EB00E2E803 /* InfoPlist.strings */; };
+		F57E0F8516FB45EB00E2E803 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E0F8416FB45EB00E2E803 /* main.m */; };
+		F57E0F8916FB45EB00E2E803 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E0F8816FB45EB00E2E803 /* AppDelegate.m */; };
+		F57E0F8B16FB45EB00E2E803 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F57E0F8A16FB45EB00E2E803 /* Default.png */; };
+		F57E0F8D16FB45EB00E2E803 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F57E0F8C16FB45EB00E2E803 /* Default@2x.png */; };
+		F57E0F8F16FB45EB00E2E803 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F57E0F8E16FB45EB00E2E803 /* Default-568h@2x.png */; };
+		F57E0F9216FB45EB00E2E803 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57E0F9016FB45EB00E2E803 /* MainStoryboard.storyboard */; };
+		F57E0F9D16FB45EC00E2E803 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57E0F9C16FB45EC00E2E803 /* SenTestingKit.framework */; };
+		F57E0F9E16FB45EC00E2E803 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57E0F7816FB45EB00E2E803 /* UIKit.framework */; };
+		F57E0F9F16FB45EC00E2E803 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57E0F7A16FB45EB00E2E803 /* Foundation.framework */; };
+		F57E0FA716FB45EC00E2E803 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F57E0FA516FB45EC00E2E803 /* InfoPlist.strings */; };
+		F57E0FAA16FB45EC00E2E803 /* PitchFeudV2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E0FA916FB45EC00E2E803 /* PitchFeudV2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F57E0FA016FB45EC00E2E803 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F57E0F6D16FB45EB00E2E803 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F57E0F7416FB45EB00E2E803;
+			remoteInfo = PitchFeudV2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D00EA0EC1700A54B00D0EFCC /* PlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerManager.h; sourceTree = "<group>"; };
+		D00EA0ED1700A54B00D0EFCC /* PlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerManager.m; sourceTree = "<group>"; };
+		D00EA0EF1700A79700D0EFCC /* PlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersViewController.h; sourceTree = "<group>"; };
+		D00EA0F01700A79800D0EFCC /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewController.m; sourceTree = "<group>"; };
+		D02617A3170B0A6900DD1CE7 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		D02617A4170B0A6900DD1CE7 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		D02AC09D170A160E00F9F23C /* PlayerButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerButtonViewController.h; sourceTree = "<group>"; };
+		D02AC09E170A160E00F9F23C /* PlayerButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerButtonViewController.m; sourceTree = "<group>"; };
+		D02AD1BA16FC6B460012285C /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
+		D02AD1BB16FC6B460012285C /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
+		D02AD1BE16FC6D530012285C /* NSURLConnectionWithTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionWithTag.h; sourceTree = "<group>"; };
+		D02AD1BF16FC6D530012285C /* NSURLConnectionWithTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionWithTag.m; sourceTree = "<group>"; };
+		D03CC1CB16FF41B2003702B5 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
+		D03CC1CC16FF41B2003702B5 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
+		D03CC1CF16FF56BF003702B5 /* PitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PitchViewController.h; sourceTree = "<group>"; };
+		D03CC1D016FF56BF003702B5 /* PitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PitchViewController.m; sourceTree = "<group>"; };
+		D03CC1D216FF6326003702B5 /* EventOnPitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EventOnPitch.png; sourceTree = "<group>"; };
+		D03CC1D316FF6326003702B5 /* EventOnPitch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EventOnPitch@2x.png"; sourceTree = "<group>"; };
+		DD0426AE171C707600F78C39 /* CreateBetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateBetViewController.h; sourceTree = "<group>"; };
+		DD0426AF171C707600F78C39 /* CreateBetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateBetViewController.m; sourceTree = "<group>"; };
+		DD0426B1171C708200F78C39 /* OpenBetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenBetsViewController.h; sourceTree = "<group>"; };
+		DD0426B2171C708200F78C39 /* OpenBetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenBetsViewController.m; sourceTree = "<group>"; };
+		DD0426B4171C753E00F78C39 /* BetsPopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetsPopUpViewController.h; sourceTree = "<group>"; };
+		DD0426B5171C753E00F78C39 /* BetsPopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetsPopUpViewController.m; sourceTree = "<group>"; };
+		DD0426B7171C7ACF00F78C39 /* BetsScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetsScrollViewController.h; sourceTree = "<group>"; };
+		DD0426B8171C7ACF00F78C39 /* BetsScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetsScrollViewController.m; sourceTree = "<group>"; };
+		DD0426BA171C821800F78C39 /* OpenBetsScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenBetsScrollViewController.h; sourceTree = "<group>"; };
+		DD0426BB171C821900F78C39 /* OpenBetsScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenBetsScrollViewController.m; sourceTree = "<group>"; };
+		DD0426BF171C87AA00F78C39 /* ChallengesList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengesList.png; sourceTree = "<group>"; };
+		DD0426C1171C87DF00F78C39 /* ChallengesTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengesTop.png; sourceTree = "<group>"; };
+		DD0426C3171C87EB00F78C39 /* ChallengesCreateNewButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengesCreateNewButton.png; sourceTree = "<group>"; };
+		DD0426C4171C87EB00F78C39 /* ChallengesOpenChallengesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengesOpenChallengesButton.png; sourceTree = "<group>"; };
+		DD6AC7C9171713D200585921 /* MatchesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MatchesButton.png; sourceTree = "<group>"; };
+		DD6AC7CD1717166E00585921 /* MatchesTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MatchesTop.png; sourceTree = "<group>"; };
+		DD6AC7D01717293600585921 /* FriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsListViewController.h; sourceTree = "<group>"; };
+		DD6AC7D11717293600585921 /* FriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsListViewController.m; sourceTree = "<group>"; };
+		DD6AC7D317172B3300585921 /* FriendsList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FriendsList.png; sourceTree = "<group>"; };
+		DD6AC7D417172B3300585921 /* FriendsPaul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FriendsPaul.png; sourceTree = "<group>"; };
+		DD6AC7D517172B3300585921 /* FriendsTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FriendsTop.png; sourceTree = "<group>"; };
+		DD6AC7D91717308900585921 /* SettingsList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsList.png; sourceTree = "<group>"; };
+		DD6AC7DA1717308900585921 /* SettingsTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsTop.png; sourceTree = "<group>"; };
+		DD6AC7DE1717312600585921 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		DD6AC7DF1717312600585921 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		DD6AC7E11717318B00585921 /* LeaguesList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeaguesList.png; sourceTree = "<group>"; };
+		DD6AC7E21717318B00585921 /* LeaguesTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeaguesTop.png; sourceTree = "<group>"; };
+		DD6AC7E51717348E00585921 /* GameWindowPlayersBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowPlayersBackground.png; sourceTree = "<group>"; };
+		DD6AC7EB171736B400585921 /* MainMenuProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuProfile.png; sourceTree = "<group>"; };
+		DD6AC7EC171736B400585921 /* MainMenuTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuTop.png; sourceTree = "<group>"; };
+		DD6AC7F117173A7100585921 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DD6AC7F317173B4100585921 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DD6AC7F517173BBB00585921 /* Icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_57.png; sourceTree = "<group>"; };
+		DD6C81C31703827700EF3C9C /* BuyMenuBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BuyMenuBackground.png; sourceTree = "<group>"; };
+		DD6C81C51703839200EF3C9C /* BuyPlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyPlayersViewController.h; sourceTree = "<group>"; };
+		DD6C81C61703839200EF3C9C /* BuyPlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyPlayersViewController.m; sourceTree = "<group>"; };
+		DD6C81C81703858D00EF3C9C /* PlayersArraysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersArraysViewController.h; sourceTree = "<group>"; };
+		DD6C81C91703858E00EF3C9C /* PlayersArraysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersArraysViewController.m; sourceTree = "<group>"; };
+		DD6C81CD1703862F00EF3C9C /* PlayerBWBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayerBWBlack.png; sourceTree = "<group>"; };
+		DD6C81CE1703862F00EF3C9C /* PlayerBWBrown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayerBWBrown.png; sourceTree = "<group>"; };
+		DD6C81CF1703862F00EF3C9C /* PlayerRedBlond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayerRedBlond.png; sourceTree = "<group>"; };
+		DD6C81D01703862F00EF3C9C /* PlayerRedBrown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayerRedBrown.png; sourceTree = "<group>"; };
+		DD7578C217132575004B0D3E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		DD7578C317132575004B0D3E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		DDBB90AF1716F78A00FEF71B /* MenuScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScrollViewController.h; sourceTree = "<group>"; };
+		DDBB90B01716F78A00FEF71B /* MenuScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScrollViewController.m; sourceTree = "<group>"; };
+		DDBB90DA17170CF500FEF71B /* MainMenuCommunityUpdates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuCommunityUpdates.png; sourceTree = "<group>"; };
+		DDBB90DC1717115300FEF71B /* accid___.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "accid___.ttf"; sourceTree = "<group>"; };
+		DDC3DE9417213301004EFBD4 /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
+		DDC3DEB017216D6B004EFBD4 /* GameWindowRight2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowRight2.png; sourceTree = "<group>"; };
+		DDC3DEB217216D91004EFBD4 /* GameWindowBetsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowBetsBackground.png; sourceTree = "<group>"; };
+		DDC3DEB417216DAB004EFBD4 /* GameWindowButtonCreateBet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowButtonCreateBet.png; sourceTree = "<group>"; };
+		DDC3DEBA1721702F004EFBD4 /* GameWindowButtonMarket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowButtonMarket.png; sourceTree = "<group>"; };
+		DDC3DEBB1721702F004EFBD4 /* GameWindowButtonMyBets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowButtonMyBets.png; sourceTree = "<group>"; };
+		DDC3DEC517217623004EFBD4 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		DDC3DEC617217623004EFBD4 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		DDC3DEC8172176B6004EFBD4 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		DDC3DEC9172176B6004EFBD4 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		DDC3DECB172178D9004EFBD4 /* GameWindowButtonMyBetsClicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowButtonMyBetsClicked.png; sourceTree = "<group>"; };
+		DDC3DECE17217953004EFBD4 /* GameWindowBet08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowBet08.png; sourceTree = "<group>"; };
+		DDC3DECF17217953004EFBD4 /* GameWindowBet07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowBet07.png; sourceTree = "<group>"; };
+		DDC3DED017217953004EFBD4 /* GameWindowBet06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowBet06.png; sourceTree = "<group>"; };
+		DDC3DED117217953004EFBD4 /* GameWindowBet05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowBet05.png; sourceTree = "<group>"; };
+		DDC3DED217217953004EFBD4 /* GameWindowBet04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowBet04.png; sourceTree = "<group>"; };
+		DDC3DED317217953004EFBD4 /* GameWindowBet03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowBet03.png; sourceTree = "<group>"; };
+		DDC3DED417217953004EFBD4 /* GameWindowBet02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowBet02.png; sourceTree = "<group>"; };
+		DDC3DED517217953004EFBD4 /* GameWindowBet01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowBet01.png; sourceTree = "<group>"; };
+		DDC3DEDE17217F63004EFBD4 /* GameWindowTop2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowTop2.png; sourceTree = "<group>"; };
+		DDC3DEE0172180FB004EFBD4 /* GameWindowTeamBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowTeamBackground.png; sourceTree = "<group>"; };
+		DDC3DEE2172182A4004EFBD4 /* GameWindowButtonBuyPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowButtonBuyPlayer.png; sourceTree = "<group>"; };
+		DDD88ED91718550C006E0F16 /* LeagueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeagueViewController.h; sourceTree = "<group>"; };
+		DDD88EDA1718550C006E0F16 /* LeagueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeagueViewController.m; sourceTree = "<group>"; };
+		DDD88EDC1718587E006E0F16 /* SplashScreen02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen02.png; sourceTree = "<group>"; };
+		DDD88EDE17185CA5006E0F16 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
+		DDD88EE117185E7A006E0F16 /* LeagueList02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeagueList02.png; sourceTree = "<group>"; };
+		DDD88EE217185E7A006E0F16 /* LeagueTop02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeagueTop02.png; sourceTree = "<group>"; };
+		DDD88EE5171864F9006E0F16 /* LeagueListHalf01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeagueListHalf01.png; sourceTree = "<group>"; };
+		DDD88EE6171864F9006E0F16 /* LeagueListHalf02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeagueListHalf02.png; sourceTree = "<group>"; };
+		DDD99ADF1719894E00DDD595 /* MainMenuButton00Resume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuButton00Resume.png; sourceTree = "<group>"; };
+		DDD99AE01719894E00DDD595 /* MainMenuButton01Matches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuButton01Matches.png; sourceTree = "<group>"; };
+		DDD99AE11719894E00DDD595 /* MainMenuButton02Friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuButton02Friends.png; sourceTree = "<group>"; };
+		DDD99AE21719894E00DDD595 /* MainMenuButton03Leagues.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuButton03Leagues.png; sourceTree = "<group>"; };
+		DDD99AE31719894E00DDD595 /* MainMenuButton04Bets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuButton04Bets.png; sourceTree = "<group>"; };
+		DDD99AE41719894E00DDD595 /* MainMenuButton05Shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuButton05Shop.png; sourceTree = "<group>"; };
+		DDD99AE51719894E00DDD595 /* MainMenuButton06Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuButton06Settings.png; sourceTree = "<group>"; };
+		DDD99AE61719894E00DDD595 /* MainMenuButton07SignOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuButton07SignOut.png; sourceTree = "<group>"; };
+		DDD99AE71719894E00DDD595 /* MainMenuButton08Leaderboards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuButton08Leaderboards.png; sourceTree = "<group>"; };
+		DDD99AF1171991D400DDD595 /* Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Profile.png; sourceTree = "<group>"; };
+		DDEE46511712A6600000ABFB /* BetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetsViewController.h; sourceTree = "<group>"; };
+		DDEE46521712A6600000ABFB /* BetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetsViewController.m; sourceTree = "<group>"; };
+		DDF833D81728416300ED39BF /* CreateBet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreateBet.png; sourceTree = "<group>"; };
+		F500C92416FCBEBA007B481E /* Pitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pitch.png; sourceTree = "<group>"; };
+		F500C92616FCCB29007B481E /* ButtonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBack.png; sourceTree = "<group>"; };
+		F500C92716FCCB29007B481E /* ButtonBetDetails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBetDetails.png; sourceTree = "<group>"; };
+		F500C92816FCCB29007B481E /* ButtonBrowseBets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBrowseBets.png; sourceTree = "<group>"; };
+		F500C92A16FCCB29007B481E /* ButtonCancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonCancel.png; sourceTree = "<group>"; };
+		F500C92B16FCCB29007B481E /* ButtonCancelClicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonCancelClicked.png; sourceTree = "<group>"; };
+		F500C92C16FCCB2A007B481E /* ButtonChat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonChat.png; sourceTree = "<group>"; };
+		F500C92D16FCCB2A007B481E /* ButtonCreateBet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonCreateBet.png; sourceTree = "<group>"; };
+		F500C92E16FCCB2A007B481E /* ButtonMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonMenu.png; sourceTree = "<group>"; };
+		F500C92F16FCCB2A007B481E /* ButtonQuestionsClicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonQuestionsClicked.png; sourceTree = "<group>"; };
+		F500C93016FCCB2A007B481E /* ButtonRefreshList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonRefreshList.png; sourceTree = "<group>"; };
+		F500C93116FCCB2A007B481E /* ButtonSubmitBet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonSubmitBet.png; sourceTree = "<group>"; };
+		F500C93216FCCB2A007B481E /* ButtonTeamStats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonTeamStats.png; sourceTree = "<group>"; };
+		F500C93316FCCB2A007B481E /* ButtonTeamStatsClicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonTeamStatsClicked.png; sourceTree = "<group>"; };
+		F500C93416FCCB2A007B481E /* ButtonWagers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonWagers.png; sourceTree = "<group>"; };
+		F500C93616FCCB2A007B481E /* GameWindowMiddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowMiddle.png; sourceTree = "<group>"; };
+		F500C93716FCCB2A007B481E /* GameWindowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameWindowRight.png; sourceTree = "<group>"; };
+		F500C93816FCCB2A007B481E /* MainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenu.png; sourceTree = "<group>"; };
+		F500C93916FCCB2A007B481E /* PopupBet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PopupBet.png; sourceTree = "<group>"; };
+		F500C93A16FCCB2A007B481E /* PopupSelectCategory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PopupSelectCategory.png; sourceTree = "<group>"; };
+		F500C93B16FCCB2A007B481E /* PopupTeamStats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PopupTeamStats.png; sourceTree = "<group>"; };
+		F500C93C16FCCB2A007B481E /* Topbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Topbar.png; sourceTree = "<group>"; };
+		F500C93D16FCCB2A007B481E /* TopbarMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopbarMenu.png; sourceTree = "<group>"; };
+		F500C96016FCD0F6007B481E /* InitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitViewController.h; sourceTree = "<group>"; };
+		F500C96116FCD0F6007B481E /* InitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitViewController.m; sourceTree = "<group>"; };
+		F500C96416FCD19F007B481E /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		F500C96516FCD19F007B481E /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		F500C96616FCD19F007B481E /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
+		F500C96716FCD19F007B481E /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
+		F500C97016FCD261007B481E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F500C97116FCD261007B481E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F5618D1516FDDB1C00CC07C9 /* MenuNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuNavViewController.h; sourceTree = "<group>"; };
+		F5618D1616FDDB1C00CC07C9 /* MenuNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuNavViewController.m; sourceTree = "<group>"; };
+		F5618D1816FDDB3100CC07C9 /* ChatNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatNavViewController.h; sourceTree = "<group>"; };
+		F5618D1916FDDB3100CC07C9 /* ChatNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatNavViewController.m; sourceTree = "<group>"; };
+		F5618D2116FDDE3800CC07C9 /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
+		F5618D2216FDDE3900CC07C9 /* ChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewController.m; sourceTree = "<group>"; };
+		F5618D2A16FDE74100CC07C9 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		F5618D2B16FDE74100CC07C9 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		F57E0F7516FB45EB00E2E803 /* PitchFeudV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchFeudV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57E0F7816FB45EB00E2E803 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F57E0F7A16FB45EB00E2E803 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F57E0F7C16FB45EB00E2E803 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F57E0F8016FB45EB00E2E803 /* PitchFeudV2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PitchFeudV2-Info.plist"; sourceTree = "<group>"; };
+		F57E0F8216FB45EB00E2E803 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F57E0F8416FB45EB00E2E803 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F57E0F8616FB45EB00E2E803 /* PitchFeudV2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PitchFeudV2-Prefix.pch"; sourceTree = "<group>"; };
+		F57E0F8716FB45EB00E2E803 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F57E0F8816FB45EB00E2E803 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F57E0F8A16FB45EB00E2E803 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F57E0F8C16FB45EB00E2E803 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F57E0F8E16FB45EB00E2E803 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F57E0F9116FB45EB00E2E803 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F57E0F9B16FB45EC00E2E803 /* PitchFeudV2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchFeudV2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57E0F9C16FB45EC00E2E803 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F57E0FA416FB45EC00E2E803 /* PitchFeudV2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PitchFeudV2Tests-Info.plist"; sourceTree = "<group>"; };
+		F57E0FA616FB45EC00E2E803 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F57E0FA816FB45EC00E2E803 /* PitchFeudV2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PitchFeudV2Tests.h; sourceTree = "<group>"; };
+		F57E0FA916FB45EC00E2E803 /* PitchFeudV2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PitchFeudV2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F57E0F7216FB45EB00E2E803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57E0F7916FB45EB00E2E803 /* UIKit.framework in Frameworks */,
+				F57E0F7B16FB45EB00E2E803 /* Foundation.framework in Frameworks */,
+				F57E0F7D16FB45EB00E2E803 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57E0F9716FB45EC00E2E803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57E0F9D16FB45EC00E2E803 /* SenTestingKit.framework in Frameworks */,
+				F57E0F9E16FB45EC00E2E803 /* UIKit.framework in Frameworks */,
+				F57E0F9F16FB45EC00E2E803 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D02617A2170B0A4900DD1CE7 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D02617A3170B0A6900DD1CE7 /* Player.h */,
+				D02617A4170B0A6900DD1CE7 /* Player.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		D02AD1B916FC6B190012285C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D02AD1BA16FC6B460012285C /* ConnectionManager.h */,
+				D02AD1BB16FC6B460012285C /* ConnectionManager.m */,
+				D00EA0EC1700A54B00D0EFCC /* PlayerManager.h */,
+				D00EA0ED1700A54B00D0EFCC /* PlayerManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		D02AD1BD16FC6D380012285C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D02617A2170B0A4900DD1CE7 /* Objects */,
+				DD6C81CB1703859800EF3C9C /* Buy Player */,
+				F5618D2516FDE32800CC07C9 /* Chat */,
+				F500C92016FCB4AC007B481E /* ECSlidingViewController */,
+				F500C96016FCD0F6007B481E /* InitViewController.h */,
+				F500C96116FCD0F6007B481E /* InitViewController.m */,
+				D03CC1CB16FF41B2003702B5 /* LineView.h */,
+				D03CC1CC16FF41B2003702B5 /* LineView.m */,
+				F500C97016FCD261007B481E /* MainViewController.h */,
+				F500C97116FCD261007B481E /* MainViewController.m */,
+				F5618D2416FDE32200CC07C9 /* Menu */,
+				F5618D2916FDE71B00CC07C9 /* Navigation */,
+				D02AD1BE16FC6D530012285C /* NSURLConnectionWithTag.h */,
+				D00EA0EF1700A79700D0EFCC /* PlayersViewController.h */,
+				D00EA0F01700A79800D0EFCC /* PlayersViewController.m */,
+				D02AD1BF16FC6D530012285C /* NSURLConnectionWithTag.m */,
+				D03CC1CF16FF56BF003702B5 /* PitchViewController.h */,
+				D03CC1D016FF56BF003702B5 /* PitchViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		DD0426BD171C822100F78C39 /* Open Bets */ = {
+			isa = PBXGroup;
+			children = (
+				DD0426BA171C821800F78C39 /* OpenBetsScrollViewController.h */,
+				DD0426BB171C821900F78C39 /* OpenBetsScrollViewController.m */,
+				DD0426B1171C708200F78C39 /* OpenBetsViewController.h */,
+				DD0426B2171C708200F78C39 /* OpenBetsViewController.m */,
+				DD0426B4171C753E00F78C39 /* BetsPopUpViewController.h */,
+				DD0426B5171C753E00F78C39 /* BetsPopUpViewController.m */,
+			);
+			name = "Open Bets";
+			sourceTree = "<group>";
+		};
+		DD0426BE171C823100F78C39 /* Create New */ = {
+			isa = PBXGroup;
+			children = (
+				DD0426AE171C707600F78C39 /* CreateBetViewController.h */,
+				DD0426AF171C707600F78C39 /* CreateBetViewController.m */,
+			);
+			name = "Create New";
+			sourceTree = "<group>";
+		};
+		DD6AC7CF1717292300585921 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				DD6AC7D01717293600585921 /* FriendsListViewController.h */,
+				DD6AC7D11717293600585921 /* FriendsListViewController.m */,
+			);
+			name = Friends;
+			sourceTree = "<group>";
+		};
+		DD6AC7DD1717310E00585921 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DD6AC7DE1717312600585921 /* SettingsViewController.h */,
+				DD6AC7DF1717312600585921 /* SettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		DD6C81CB1703859800EF3C9C /* Buy Player */ = {
+			isa = PBXGroup;
+			children = (
+				DD6C81C51703839200EF3C9C /* BuyPlayersViewController.h */,
+				DD6C81C61703839200EF3C9C /* BuyPlayersViewController.m */,
+				DD6C81C81703858D00EF3C9C /* PlayersArraysViewController.h */,
+				DD6C81C91703858E00EF3C9C /* PlayersArraysViewController.m */,
+				D02AC09D170A160E00F9F23C /* PlayerButtonViewController.h */,
+				D02AC09E170A160E00F9F23C /* PlayerButtonViewController.m */,
+			);
+			name = "Buy Player";
+			sourceTree = "<group>";
+		};
+		DD6C81CC1703861000EF3C9C /* ActionGfxs */ = {
+			isa = PBXGroup;
+			children = (
+				D03CC1D216FF6326003702B5 /* EventOnPitch.png */,
+				D03CC1D316FF6326003702B5 /* EventOnPitch@2x.png */,
+				F500C92416FCBEBA007B481E /* Pitch.png */,
+				DDC3DE9417213301004EFBD4 /* Player.png */,
+				DD6C81CD1703862F00EF3C9C /* PlayerBWBlack.png */,
+				DD6C81CE1703862F00EF3C9C /* PlayerBWBrown.png */,
+				DD6C81CF1703862F00EF3C9C /* PlayerRedBlond.png */,
+				DD6C81D01703862F00EF3C9C /* PlayerRedBrown.png */,
+			);
+			name = ActionGfxs;
+			sourceTree = "<group>";
+		};
+		DDBB90DE1717115700FEF71B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB90DC1717115300FEF71B /* accid___.ttf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		DDC3DEC11721724B004EFBD4 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DDC3DEC517217623004EFBD4 /* CollectionViewController.h */,
+				DDC3DEC617217623004EFBD4 /* CollectionViewController.m */,
+				DDC3DEC8172176B6004EFBD4 /* CollectionViewCell.h */,
+				DDC3DEC9172176B6004EFBD4 /* CollectionViewCell.m */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		DDC3DECD17217948004EFBD4 /* Bets */ = {
+			isa = PBXGroup;
+			children = (
+				DDF833D81728416300ED39BF /* CreateBet.png */,
+				DDC3DED517217953004EFBD4 /* GameWindowBet01.png */,
+				DDC3DED417217953004EFBD4 /* GameWindowBet02.png */,
+				DDC3DED317217953004EFBD4 /* GameWindowBet03.png */,
+				DDC3DED217217953004EFBD4 /* GameWindowBet04.png */,
+				DDC3DED117217953004EFBD4 /* GameWindowBet05.png */,
+				DDC3DED017217953004EFBD4 /* GameWindowBet06.png */,
+				DDC3DECF17217953004EFBD4 /* GameWindowBet07.png */,
+				DDC3DECE17217953004EFBD4 /* GameWindowBet08.png */,
+			);
+			name = Bets;
+			sourceTree = "<group>";
+		};
+		DDD88ED617185036006E0F16 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DD0426C1171C87DF00F78C39 /* ChallengesTop.png */,
+				DD6AC7D517172B3300585921 /* FriendsTop.png */,
+				DD6AC7E21717318B00585921 /* LeaguesTop.png */,
+				DDD88EE217185E7A006E0F16 /* LeagueTop02.png */,
+				DD6AC7EC171736B400585921 /* MainMenuTop.png */,
+				DD6AC7CD1717166E00585921 /* MatchesTop.png */,
+				DD6AC7DA1717308900585921 /* SettingsTop.png */,
+				F500C93C16FCCB2A007B481E /* Topbar.png */,
+				F500C93D16FCCB2A007B481E /* TopbarMenu.png */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		DDD88ED7171854DC006E0F16 /* Bets */ = {
+			isa = PBXGroup;
+			children = (
+				DD0426B7171C7ACF00F78C39 /* BetsScrollViewController.h */,
+				DD0426B8171C7ACF00F78C39 /* BetsScrollViewController.m */,
+				DDEE46511712A6600000ABFB /* BetsViewController.h */,
+				DDEE46521712A6600000ABFB /* BetsViewController.m */,
+				DDC3DEC11721724B004EFBD4 /* CollectionView */,
+				DD0426BE171C823100F78C39 /* Create New */,
+				DD0426BD171C822100F78C39 /* Open Bets */,
+			);
+			name = Bets;
+			sourceTree = "<group>";
+		};
+		DDD88ED8171854EC006E0F16 /* Leagues */ = {
+			isa = PBXGroup;
+			children = (
+				DDD88ED91718550C006E0F16 /* LeagueViewController.h */,
+				DDD88EDA1718550C006E0F16 /* LeagueViewController.m */,
+			);
+			name = Leagues;
+			sourceTree = "<group>";
+		};
+		DDD88EE017185E22006E0F16 /* Assorted */ = {
+			isa = PBXGroup;
+			children = (
+				DDD88EE117185E7A006E0F16 /* LeagueList02.png */,
+				DDD88EE5171864F9006E0F16 /* LeagueListHalf01.png */,
+				DDD88EE6171864F9006E0F16 /* LeagueListHalf02.png */,
+			);
+			name = Assorted;
+			sourceTree = "<group>";
+		};
+		DDF932F317037C5D0052836B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DDC3DECD17217948004EFBD4 /* Bets */,
+				DD6C81C31703827700EF3C9C /* BuyMenuBackground.png */,
+				DD0426BF171C87AA00F78C39 /* ChallengesList.png */,
+				DD6AC7D317172B3300585921 /* FriendsList.png */,
+				DDC3DEE0172180FB004EFBD4 /* GameWindowTeamBackground.png */,
+				DDC3DEB217216D91004EFBD4 /* GameWindowBetsBackground.png */,
+				F500C93616FCCB2A007B481E /* GameWindowMiddle.png */,
+				DD6AC7E51717348E00585921 /* GameWindowPlayersBackground.png */,
+				F500C93716FCCB2A007B481E /* GameWindowRight.png */,
+				DDC3DEB017216D6B004EFBD4 /* GameWindowRight2.png */,
+				DDC3DEDE17217F63004EFBD4 /* GameWindowTop2.png */,
+				DD6AC7E11717318B00585921 /* LeaguesList.png */,
+				F500C93816FCCB2A007B481E /* MainMenu.png */,
+				DDBB90DA17170CF500FEF71B /* MainMenuCommunityUpdates.png */,
+				DD6AC7EB171736B400585921 /* MainMenuProfile.png */,
+				F500C93916FCCB2A007B481E /* PopupBet.png */,
+				F500C93A16FCCB2A007B481E /* PopupSelectCategory.png */,
+				F500C93B16FCCB2A007B481E /* PopupTeamStats.png */,
+				DDD99AF1171991D400DDD595 /* Profile.png */,
+				DD6AC7D91717308900585921 /* SettingsList.png */,
+				DDD88EDE17185CA5006E0F16 /* SplashScreen.png */,
+				DDD88EDC1718587E006E0F16 /* SplashScreen02.png */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		F500C92016FCB4AC007B481E /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F500C96416FCD19F007B481E /* ECSlidingViewController.h */,
+				F500C96516FCD19F007B481E /* ECSlidingViewController.m */,
+				F500C96616FCD19F007B481E /* UIImage+ImageWithUIView.h */,
+				F500C96716FCD19F007B481E /* UIImage+ImageWithUIView.m */,
+			);
+			name = ECSlidingViewController;
+			sourceTree = "<group>";
+		};
+		F500C92216FCBD8A007B481E /* Gfx */ = {
+			isa = PBXGroup;
+			children = (
+				DDD88EE017185E22006E0F16 /* Assorted */,
+				DDD88ED617185036006E0F16 /* UI */,
+				DDBB90DE1717115700FEF71B /* Font */,
+				DD6C81CC1703861000EF3C9C /* ActionGfxs */,
+				DDF932F317037C5D0052836B /* Screens */,
+				F500C95616FCCB38007B481E /* Buttons */,
+			);
+			name = Gfx;
+			sourceTree = "<group>";
+		};
+		F500C95616FCCB38007B481E /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				DDC3DECB172178D9004EFBD4 /* GameWindowButtonMyBetsClicked.png */,
+				DDC3DEBA1721702F004EFBD4 /* GameWindowButtonMarket.png */,
+				DDC3DEBB1721702F004EFBD4 /* GameWindowButtonMyBets.png */,
+				DDC3DEE2172182A4004EFBD4 /* GameWindowButtonBuyPlayer.png */,
+				DDC3DEB417216DAB004EFBD4 /* GameWindowButtonCreateBet.png */,
+				DD0426C3171C87EB00F78C39 /* ChallengesCreateNewButton.png */,
+				DD0426C4171C87EB00F78C39 /* ChallengesOpenChallengesButton.png */,
+				DDD99ADF1719894E00DDD595 /* MainMenuButton00Resume.png */,
+				DDD99AE01719894E00DDD595 /* MainMenuButton01Matches.png */,
+				DDD99AE11719894E00DDD595 /* MainMenuButton02Friends.png */,
+				DDD99AE21719894E00DDD595 /* MainMenuButton03Leagues.png */,
+				DDD99AE31719894E00DDD595 /* MainMenuButton04Bets.png */,
+				DDD99AE41719894E00DDD595 /* MainMenuButton05Shop.png */,
+				DDD99AE51719894E00DDD595 /* MainMenuButton06Settings.png */,
+				DDD99AE61719894E00DDD595 /* MainMenuButton07SignOut.png */,
+				DDD99AE71719894E00DDD595 /* MainMenuButton08Leaderboards.png */,
+				DD6AC7D417172B3300585921 /* FriendsPaul.png */,
+				DD6AC7C9171713D200585921 /* MatchesButton.png */,
+				F500C92616FCCB29007B481E /* ButtonBack.png */,
+				F500C92716FCCB29007B481E /* ButtonBetDetails.png */,
+				F500C92816FCCB29007B481E /* ButtonBrowseBets.png */,
+				F500C92A16FCCB29007B481E /* ButtonCancel.png */,
+				F500C92B16FCCB29007B481E /* ButtonCancelClicked.png */,
+				F500C92C16FCCB2A007B481E /* ButtonChat.png */,
+				F500C92D16FCCB2A007B481E /* ButtonCreateBet.png */,
+				F500C92E16FCCB2A007B481E /* ButtonMenu.png */,
+				F500C92F16FCCB2A007B481E /* ButtonQuestionsClicked.png */,
+				F500C93016FCCB2A007B481E /* ButtonRefreshList.png */,
+				F500C93116FCCB2A007B481E /* ButtonSubmitBet.png */,
+				F500C93216FCCB2A007B481E /* ButtonTeamStats.png */,
+				F500C93316FCCB2A007B481E /* ButtonTeamStatsClicked.png */,
+				F500C93416FCCB2A007B481E /* ButtonWagers.png */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		F5618D2416FDE32200CC07C9 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DDD88ED8171854EC006E0F16 /* Leagues */,
+				DDD88ED7171854DC006E0F16 /* Bets */,
+				DD6AC7DD1717310E00585921 /* Settings */,
+				DD6AC7CF1717292300585921 /* Friends */,
+				DD7578C217132575004B0D3E /* MenuViewController.h */,
+				DD7578C317132575004B0D3E /* MenuViewController.m */,
+				F5618D1516FDDB1C00CC07C9 /* MenuNavViewController.h */,
+				F5618D1616FDDB1C00CC07C9 /* MenuNavViewController.m */,
+				DDBB90AF1716F78A00FEF71B /* MenuScrollViewController.h */,
+				DDBB90B01716F78A00FEF71B /* MenuScrollViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		F5618D2516FDE32800CC07C9 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F5618D2116FDDE3800CC07C9 /* ChatTableViewController.h */,
+				F5618D2216FDDE3900CC07C9 /* ChatTableViewController.m */,
+				F5618D1816FDDB3100CC07C9 /* ChatNavViewController.h */,
+				F5618D1916FDDB3100CC07C9 /* ChatNavViewController.m */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		F5618D2916FDE71B00CC07C9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F5618D2A16FDE74100CC07C9 /* BasicViewController.h */,
+				F5618D2B16FDE74100CC07C9 /* BasicViewController.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		F57E0F6C16FB45EB00E2E803 = {
+			isa = PBXGroup;
+			children = (
+				DD6AC7F517173BBB00585921 /* Icon_57.png */,
+				DD6AC7F317173B4100585921 /* Default@2x.png */,
+				DD6AC7F117173A7100585921 /* Icon.png */,
+				F57E0F7E16FB45EB00E2E803 /* PitchFeudV2 */,
+				F57E0FA216FB45EC00E2E803 /* PitchFeudV2Tests */,
+				F57E0F7716FB45EB00E2E803 /* Frameworks */,
+				F57E0F7616FB45EB00E2E803 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F57E0F7616FB45EB00E2E803 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F57E0F7516FB45EB00E2E803 /* PitchFeudV2.app */,
+				F57E0F9B16FB45EC00E2E803 /* PitchFeudV2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F57E0F7716FB45EB00E2E803 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F57E0F7816FB45EB00E2E803 /* UIKit.framework */,
+				F57E0F7A16FB45EB00E2E803 /* Foundation.framework */,
+				F57E0F7C16FB45EB00E2E803 /* CoreGraphics.framework */,
+				F57E0F9C16FB45EC00E2E803 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F57E0F7E16FB45EB00E2E803 /* PitchFeudV2 */ = {
+			isa = PBXGroup;
+			children = (
+				F57E0F8716FB45EB00E2E803 /* AppDelegate.h */,
+				F57E0F8816FB45EB00E2E803 /* AppDelegate.m */,
+				F57E0F9016FB45EB00E2E803 /* MainStoryboard.storyboard */,
+				F500C92216FCBD8A007B481E /* Gfx */,
+				D02AD1BD16FC6D380012285C /* Classes */,
+				D02AD1B916FC6B190012285C /* Managers */,
+				F57E0F7F16FB45EB00E2E803 /* Supporting Files */,
+			);
+			path = PitchFeudV2;
+			sourceTree = "<group>";
+		};
+		F57E0F7F16FB45EB00E2E803 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F57E0F8016FB45EB00E2E803 /* PitchFeudV2-Info.plist */,
+				F57E0F8116FB45EB00E2E803 /* InfoPlist.strings */,
+				F57E0F8416FB45EB00E2E803 /* main.m */,
+				F57E0F8616FB45EB00E2E803 /* PitchFeudV2-Prefix.pch */,
+				F57E0F8A16FB45EB00E2E803 /* Default.png */,
+				F57E0F8C16FB45EB00E2E803 /* Default@2x.png */,
+				F57E0F8E16FB45EB00E2E803 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F57E0FA216FB45EC00E2E803 /* PitchFeudV2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F57E0FA816FB45EC00E2E803 /* PitchFeudV2Tests.h */,
+				F57E0FA916FB45EC00E2E803 /* PitchFeudV2Tests.m */,
+				F57E0FA316FB45EC00E2E803 /* Supporting Files */,
+			);
+			path = PitchFeudV2Tests;
+			sourceTree = "<group>";
+		};
+		F57E0FA316FB45EC00E2E803 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F57E0FA416FB45EC00E2E803 /* PitchFeudV2Tests-Info.plist */,
+				F57E0FA516FB45EC00E2E803 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F57E0F7416FB45EB00E2E803 /* PitchFeudV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57E0FAD16FB45EC00E2E803 /* Build configuration list for PBXNativeTarget "PitchFeudV2" */;
+			buildPhases = (
+				F57E0F7116FB45EB00E2E803 /* Sources */,
+				F57E0F7216FB45EB00E2E803 /* Frameworks */,
+				F57E0F7316FB45EB00E2E803 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PitchFeudV2;
+			productName = PitchFeudV2;
+			productReference = F57E0F7516FB45EB00E2E803 /* PitchFeudV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F57E0F9A16FB45EC00E2E803 /* PitchFeudV2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57E0FB016FB45EC00E2E803 /* Build configuration list for PBXNativeTarget "PitchFeudV2Tests" */;
+			buildPhases = (
+				F57E0F9616FB45EC00E2E803 /* Sources */,
+				F57E0F9716FB45EC00E2E803 /* Frameworks */,
+				F57E0F9816FB45EC00E2E803 /* Resources */,
+				F57E0F9916FB45EC00E2E803 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F57E0FA116FB45EC00E2E803 /* PBXTargetDependency */,
+			);
+			name = PitchFeudV2Tests;
+			productName = PitchFeudV2Tests;
+			productReference = F57E0F9B16FB45EC00E2E803 /* PitchFeudV2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F57E0F6D16FB45EB00E2E803 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Never Kill A Customer";
+			};
+			buildConfigurationList = F57E0F7016FB45EB00E2E803 /* Build configuration list for PBXProject "PitchFeudV2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F57E0F6C16FB45EB00E2E803;
+			productRefGroup = F57E0F7616FB45EB00E2E803 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F57E0F7416FB45EB00E2E803 /* PitchFeudV2 */,
+				F57E0F9A16FB45EC00E2E803 /* PitchFeudV2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F57E0F7316FB45EB00E2E803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57E0F8316FB45EB00E2E803 /* InfoPlist.strings in Resources */,
+				F57E0F8B16FB45EB00E2E803 /* Default.png in Resources */,
+				F57E0F8D16FB45EB00E2E803 /* Default@2x.png in Resources */,
+				F57E0F8F16FB45EB00E2E803 /* Default-568h@2x.png in Resources */,
+				F57E0F9216FB45EB00E2E803 /* MainStoryboard.storyboard in Resources */,
+				F500C92516FCBEBA007B481E /* Pitch.png in Resources */,
+				F500C93E16FCCB2A007B481E /* ButtonBack.png in Resources */,
+				F500C93F16FCCB2A007B481E /* ButtonBetDetails.png in Resources */,
+				F500C94016FCCB2A007B481E /* ButtonBrowseBets.png in Resources */,
+				F500C94216FCCB2A007B481E /* ButtonCancel.png in Resources */,
+				F500C94316FCCB2A007B481E /* ButtonCancelClicked.png in Resources */,
+				F500C94416FCCB2A007B481E /* ButtonChat.png in Resources */,
+				F500C94516FCCB2A007B481E /* ButtonCreateBet.png in Resources */,
+				F500C94616FCCB2A007B481E /* ButtonMenu.png in Resources */,
+				F500C94716FCCB2A007B481E /* ButtonQuestionsClicked.png in Resources */,
+				F500C94816FCCB2A007B481E /* ButtonRefreshList.png in Resources */,
+				F500C94916FCCB2A007B481E /* ButtonSubmitBet.png in Resources */,
+				F500C94A16FCCB2A007B481E /* ButtonTeamStats.png in Resources */,
+				F500C94B16FCCB2A007B481E /* ButtonTeamStatsClicked.png in Resources */,
+				F500C94C16FCCB2A007B481E /* ButtonWagers.png in Resources */,
+				F500C94E16FCCB2A007B481E /* GameWindowMiddle.png in Resources */,
+				F500C94F16FCCB2A007B481E /* GameWindowRight.png in Resources */,
+				F500C95016FCCB2A007B481E /* MainMenu.png in Resources */,
+				F500C95116FCCB2A007B481E /* PopupBet.png in Resources */,
+				F500C95216FCCB2A007B481E /* PopupSelectCategory.png in Resources */,
+				F500C95316FCCB2A007B481E /* PopupTeamStats.png in Resources */,
+				F500C95416FCCB2A007B481E /* Topbar.png in Resources */,
+				F500C95516FCCB2A007B481E /* TopbarMenu.png in Resources */,
+				D03CC1D416FF6326003702B5 /* EventOnPitch.png in Resources */,
+				D03CC1D516FF6326003702B5 /* EventOnPitch@2x.png in Resources */,
+				DD6C81C41703827700EF3C9C /* BuyMenuBackground.png in Resources */,
+				DD6C81D11703862F00EF3C9C /* PlayerBWBlack.png in Resources */,
+				DD6C81D21703862F00EF3C9C /* PlayerBWBrown.png in Resources */,
+				DD6C81D31703862F00EF3C9C /* PlayerRedBlond.png in Resources */,
+				DD6C81D41703862F00EF3C9C /* PlayerRedBrown.png in Resources */,
+				DDBB90DB17170CF500FEF71B /* MainMenuCommunityUpdates.png in Resources */,
+				DD6AC7CB171713D200585921 /* MatchesButton.png in Resources */,
+				DD6AC7CE1717166E00585921 /* MatchesTop.png in Resources */,
+				DD6AC7D617172B3300585921 /* FriendsList.png in Resources */,
+				DD6AC7D717172B3300585921 /* FriendsPaul.png in Resources */,
+				DD6AC7D817172B3300585921 /* FriendsTop.png in Resources */,
+				DD6AC7DB1717308900585921 /* SettingsList.png in Resources */,
+				DD6AC7DC1717308900585921 /* SettingsTop.png in Resources */,
+				DD6AC7E31717318B00585921 /* LeaguesList.png in Resources */,
+				DD6AC7E41717318B00585921 /* LeaguesTop.png in Resources */,
+				DD6AC7E61717348E00585921 /* GameWindowPlayersBackground.png in Resources */,
+				DD6AC7ED171736B400585921 /* MainMenuProfile.png in Resources */,
+				DD6AC7EE171736B400585921 /* MainMenuTop.png in Resources */,
+				DD6AC7F217173A7100585921 /* Icon.png in Resources */,
+				DD6AC7F417173B4100585921 /* Default@2x.png in Resources */,
+				DD6AC7F617173BBB00585921 /* Icon_57.png in Resources */,
+				DDD88EDD1718587E006E0F16 /* SplashScreen02.png in Resources */,
+				DDD88EDF17185CA5006E0F16 /* SplashScreen.png in Resources */,
+				DDD88EE317185E7A006E0F16 /* LeagueList02.png in Resources */,
+				DDD88EE417185E7A006E0F16 /* LeagueTop02.png in Resources */,
+				DDD88EE7171864F9006E0F16 /* LeagueListHalf01.png in Resources */,
+				DDD88EE8171864F9006E0F16 /* LeagueListHalf02.png in Resources */,
+				DDD99AE81719894E00DDD595 /* MainMenuButton00Resume.png in Resources */,
+				DDD99AE91719894E00DDD595 /* MainMenuButton01Matches.png in Resources */,
+				DDD99AEA1719894E00DDD595 /* MainMenuButton02Friends.png in Resources */,
+				DDD99AEB1719894E00DDD595 /* MainMenuButton03Leagues.png in Resources */,
+				DDD99AEC1719894E00DDD595 /* MainMenuButton04Bets.png in Resources */,
+				DDD99AED1719894E00DDD595 /* MainMenuButton05Shop.png in Resources */,
+				DDD99AEE1719894E00DDD595 /* MainMenuButton06Settings.png in Resources */,
+				DDD99AEF1719894E00DDD595 /* MainMenuButton07SignOut.png in Resources */,
+				DDD99AF01719894E00DDD595 /* MainMenuButton08Leaderboards.png in Resources */,
+				DDD99AF2171991D400DDD595 /* Profile.png in Resources */,
+				DD0426C0171C87AA00F78C39 /* ChallengesList.png in Resources */,
+				DD0426C2171C87DF00F78C39 /* ChallengesTop.png in Resources */,
+				DD0426C5171C87EB00F78C39 /* ChallengesCreateNewButton.png in Resources */,
+				DD0426C6171C87EB00F78C39 /* ChallengesOpenChallengesButton.png in Resources */,
+				DDC3DE9517213301004EFBD4 /* Player.png in Resources */,
+				DDC3DEB117216D6B004EFBD4 /* GameWindowRight2.png in Resources */,
+				DDC3DEB317216D91004EFBD4 /* GameWindowBetsBackground.png in Resources */,
+				DDC3DEB517216DAB004EFBD4 /* GameWindowButtonCreateBet.png in Resources */,
+				DDC3DEBC1721702F004EFBD4 /* GameWindowButtonMarket.png in Resources */,
+				DDC3DEBD1721702F004EFBD4 /* GameWindowButtonMyBets.png in Resources */,
+				DDC3DECC172178D9004EFBD4 /* GameWindowButtonMyBetsClicked.png in Resources */,
+				DDC3DED617217953004EFBD4 /* GameWindowBet08.png in Resources */,
+				DDC3DED717217953004EFBD4 /* GameWindowBet07.png in Resources */,
+				DDC3DED817217953004EFBD4 /* GameWindowBet06.png in Resources */,
+				DDC3DED917217953004EFBD4 /* GameWindowBet05.png in Resources */,
+				DDC3DEDA17217953004EFBD4 /* GameWindowBet04.png in Resources */,
+				DDC3DEDB17217953004EFBD4 /* GameWindowBet03.png in Resources */,
+				DDC3DEDC17217953004EFBD4 /* GameWindowBet02.png in Resources */,
+				DDC3DEDD17217953004EFBD4 /* GameWindowBet01.png in Resources */,
+				DDC3DEDF17217F63004EFBD4 /* GameWindowTop2.png in Resources */,
+				DDC3DEE1172180FB004EFBD4 /* GameWindowTeamBackground.png in Resources */,
+				DDC3DEE3172182A4004EFBD4 /* GameWindowButtonBuyPlayer.png in Resources */,
+				DDF833D91728416300ED39BF /* CreateBet.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57E0F9816FB45EC00E2E803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57E0FA716FB45EC00E2E803 /* InfoPlist.strings in Resources */,
+				DDBB90DD1717115300FEF71B /* accid___.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F57E0F9916FB45EC00E2E803 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F57E0F7116FB45EB00E2E803 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03CC1CE16FF4297003702B5 /* LineView.m in Sources */,
+				F57E0F8516FB45EB00E2E803 /* main.m in Sources */,
+				F57E0F8916FB45EB00E2E803 /* AppDelegate.m in Sources */,
+				D02AD1BC16FC6B460012285C /* ConnectionManager.m in Sources */,
+				D02AD1C016FC6D530012285C /* NSURLConnectionWithTag.m in Sources */,
+				F500C96216FCD0F6007B481E /* InitViewController.m in Sources */,
+				F500C96816FCD19F007B481E /* ECSlidingViewController.m in Sources */,
+				F500C96A16FCD19F007B481E /* UIImage+ImageWithUIView.m in Sources */,
+				F500C97216FCD261007B481E /* MainViewController.m in Sources */,
+				F5618D1716FDDB1C00CC07C9 /* MenuNavViewController.m in Sources */,
+				F5618D1A16FDDB3100CC07C9 /* ChatNavViewController.m in Sources */,
+				F5618D2316FDDE3900CC07C9 /* ChatTableViewController.m in Sources */,
+				F5618D2C16FDE74100CC07C9 /* BasicViewController.m in Sources */,
+				D03CC1D116FF56C0003702B5 /* PitchViewController.m in Sources */,
+				D00EA0EE1700A54B00D0EFCC /* PlayerManager.m in Sources */,
+				D00EA0F11700A79800D0EFCC /* PlayersViewController.m in Sources */,
+				DD6C81C71703839200EF3C9C /* BuyPlayersViewController.m in Sources */,
+				DD6C81CA1703858E00EF3C9C /* PlayersArraysViewController.m in Sources */,
+				D02AC09F170A160E00F9F23C /* PlayerButtonViewController.m in Sources */,
+				D02617A5170B0A6900DD1CE7 /* Player.m in Sources */,
+				DDEE46531712A6600000ABFB /* BetsViewController.m in Sources */,
+				DD7578C417132576004B0D3E /* MenuViewController.m in Sources */,
+				DDBB90B11716F78A00FEF71B /* MenuScrollViewController.m in Sources */,
+				DD6AC7D21717293600585921 /* FriendsListViewController.m in Sources */,
+				DD6AC7E01717312600585921 /* SettingsViewController.m in Sources */,
+				DDD88EDB1718550C006E0F16 /* LeagueViewController.m in Sources */,
+				DD0426B0171C707600F78C39 /* CreateBetViewController.m in Sources */,
+				DD0426B3171C708200F78C39 /* OpenBetsViewController.m in Sources */,
+				DD0426B6171C753F00F78C39 /* BetsPopUpViewController.m in Sources */,
+				DD0426B9171C7ACF00F78C39 /* BetsScrollViewController.m in Sources */,
+				DD0426BC171C821900F78C39 /* OpenBetsScrollViewController.m in Sources */,
+				DDC3DEC717217623004EFBD4 /* CollectionViewController.m in Sources */,
+				DDC3DECA172176B6004EFBD4 /* CollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57E0F9616FB45EC00E2E803 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57E0FAA16FB45EC00E2E803 /* PitchFeudV2Tests.m in Sources */,
+				F500C96316FCD0F6007B481E /* InitViewController.m in Sources */,
+				F500C96916FCD19F007B481E /* ECSlidingViewController.m in Sources */,
+				F500C96B16FCD19F007B481E /* UIImage+ImageWithUIView.m in Sources */,
+				F500C97316FCD261007B481E /* MainViewController.m in Sources */,
+				D03CC1CD16FF41B2003702B5 /* LineView.m in Sources */,
+				DD6C81D51703873E00EF3C9C /* PlayersArraysViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F57E0FA116FB45EC00E2E803 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F57E0F7416FB45EB00E2E803 /* PitchFeudV2 */;
+			targetProxy = F57E0FA016FB45EC00E2E803 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F57E0F8116FB45EB00E2E803 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57E0F8216FB45EB00E2E803 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F57E0F9016FB45EB00E2E803 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57E0F9116FB45EB00E2E803 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F57E0FA516FB45EC00E2E803 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57E0FA616FB45EC00E2E803 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F57E0FAB16FB45EC00E2E803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F57E0FAC16FB45EC00E2E803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F57E0FAE16FB45EC00E2E803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rune Hilbert (7224SZ7CHC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rune Hilbert (7224SZ7CHC)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PitchFeudV2/PitchFeudV2-Prefix.pch";
+				INFOPLIST_FILE = "PitchFeudV2/PitchFeudV2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "69B36F33-A99A-409F-BC95-DA01F46260E2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "69B36F33-A99A-409F-BC95-DA01F46260E2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F57E0FAF16FB45EC00E2E803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rune Hilbert (7224SZ7CHC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rune Hilbert (7224SZ7CHC)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PitchFeudV2/PitchFeudV2-Prefix.pch";
+				INFOPLIST_FILE = "PitchFeudV2/PitchFeudV2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "69B36F33-A99A-409F-BC95-DA01F46260E2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "69B36F33-A99A-409F-BC95-DA01F46260E2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F57E0FB116FB45EC00E2E803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PitchFeudV2.app/PitchFeudV2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PitchFeudV2/PitchFeudV2-Prefix.pch";
+				INFOPLIST_FILE = "PitchFeudV2Tests/PitchFeudV2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F57E0FB216FB45EC00E2E803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PitchFeudV2.app/PitchFeudV2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PitchFeudV2/PitchFeudV2-Prefix.pch";
+				INFOPLIST_FILE = "PitchFeudV2Tests/PitchFeudV2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F57E0F7016FB45EB00E2E803 /* Build configuration list for PBXProject "PitchFeudV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57E0FAB16FB45EC00E2E803 /* Debug */,
+				F57E0FAC16FB45EC00E2E803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57E0FAD16FB45EC00E2E803 /* Build configuration list for PBXNativeTarget "PitchFeudV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57E0FAE16FB45EC00E2E803 /* Debug */,
+				F57E0FAF16FB45EC00E2E803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57E0FB016FB45EC00E2E803 /* Build configuration list for PBXNativeTarget "PitchFeudV2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57E0FB116FB45EC00E2E803 /* Debug */,
+				F57E0FB216FB45EC00E2E803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F57E0F6D16FB45EB00E2E803 /* Project object */;
+}
