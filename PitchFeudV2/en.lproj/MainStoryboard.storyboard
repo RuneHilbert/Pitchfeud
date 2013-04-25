@@ -1521,9 +1521,10 @@
                                     <constraint firstAttribute="width" constant="310" id="HqH-Td-azb"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="GameWindowRight2.png" translatesAutoresizingMaskIntoConstraints="NO" id="0kk-jh-Zvf">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="GameWindowRight2.png" translatesAutoresizingMaskIntoConstraints="NO" id="0kk-jh-Zvf"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Pitch2.png" translatesAutoresizingMaskIntoConstraints="NO" id="wQG-nB-5VY">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="415" id="fHf-eh-wr7"/>
+                                    <constraint firstAttribute="height" constant="370" id="JMZ-1q-PNq"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -1531,14 +1532,18 @@
                         <constraints>
                             <constraint firstItem="0kk-jh-Zvf" firstAttribute="bottom" secondItem="JRd-8f-FrI" secondAttribute="bottom" type="default" id="7Xk-Pq-ycn"/>
                             <constraint firstItem="HYv-Bp-vLt" firstAttribute="top" secondItem="JRd-8f-FrI" secondAttribute="top" constant="83" id="8uo-2D-fRv"/>
+                            <constraint firstItem="wQG-nB-5VY" firstAttribute="centerY" secondItem="JRd-8f-FrI" secondAttribute="centerY" type="default" id="K9x-Ot-ngy"/>
+                            <constraint firstItem="wQG-nB-5VY" firstAttribute="centerX" secondItem="HYv-Bp-vLt" secondAttribute="centerX" type="default" id="NWC-QS-upC"/>
+                            <constraint firstItem="wQG-nB-5VY" firstAttribute="top" secondItem="0kk-jh-Zvf" secondAttribute="top" type="default" id="PZN-F0-XjA"/>
                             <constraint firstItem="0kk-jh-Zvf" firstAttribute="leading" secondItem="JRd-8f-FrI" secondAttribute="leading" type="default" id="QX5-xG-GoW"/>
-                            <constraint firstItem="HYv-Bp-vLt" firstAttribute="centerX" secondItem="0kk-jh-Zvf" secondAttribute="centerX" type="default" id="jfV-AU-vBG"/>
+                            <constraint firstItem="wQG-nB-5VY" firstAttribute="leading" secondItem="JRd-8f-FrI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SjH-72-gBB"/>
                             <constraint firstItem="0kk-jh-Zvf" firstAttribute="trailing" secondItem="JRd-8f-FrI" secondAttribute="trailing" type="default" id="krp-Kn-ulc"/>
+                            <constraint firstAttribute="trailing" secondItem="wQG-nB-5VY" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="nJU-k4-JUP"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="pitchView" destination="HYv-Bp-vLt" id="PTA-2i-eIK"/>
+                        <outlet property="pitchView" destination="wQG-nB-5VY" id="BP9-Dz-sEK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TO-r4-fzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2111,6 +2116,7 @@
         <image name="MatchesButton.png" width="622" height="92"/>
         <image name="MatchesTop.png" width="640" height="99"/>
         <image name="Pitch.png" width="620" height="414"/>
+        <image name="Pitch2.png" width="560" height="740"/>
         <image name="Profile.png" width="640" height="920"/>
         <image name="SettingsList.png" width="640" height="920"/>
         <image name="SettingsTop.png" width="640" height="99"/>

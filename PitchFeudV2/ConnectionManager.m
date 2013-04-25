@@ -66,9 +66,9 @@ NSString *webserviceLocation = @"http://pitchfeud.astdev.lt/api/";
     
     NSURLConnectionWithTag *connection = [[NSURLConnectionWithTag alloc] initWithRequest: request delegate:self startImmediately:YES WithTag:tag];
     
-   // NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:30.0f target:self selector:@selector(ConnectionProblems:) userInfo:connection repeats:NO];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:30.0f target:self selector:@selector(ConnectionProblems:) userInfo:connection repeats:NO];
     
-   // [self.timers setObject:timer forKey:[self StringFromEnum:connection.tag]];
+    [self.timers setObject:timer forKey:[self StringFromEnum:connection.tag]];
     
     return connection;
 }
@@ -96,9 +96,9 @@ NSString *webserviceLocation = @"http://pitchfeud.astdev.lt/api/";
 }
 
 -(void)ConnectionProblems:(NSTimer*)timer{
-    [timer invalidate];
     NSURLConnectionWithTag *connection = [timer userInfo];
     [connection cancel];
+    [timer invalidate];
     [self.timers removeObjectForKey:[self StringFromEnum:connection.tag]];
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Connection error" message: [NSString stringWithFormat:@"A connection error occured with the call to %@, please try again...", [self StringFromEnum:connection.tag]] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
     [alert show];
@@ -125,9 +125,9 @@ NSString *webserviceLocation = @"http://pitchfeud.astdev.lt/api/";
 - (void)connection:(NSURLConnectionWithTag *)connection didReceiveData:(NSData *)data
 {
     //Stop the timer for this connection check, since it is receiving data
-  //  NSTimer *timer = [self.timers objectForKey:[self StringFromEnum:connection.tag]];
-  //  [timer invalidate];
-  //  [self.timers removeObjectForKey:[self StringFromEnum:connection.tag]];
+    NSTimer *timer = [self.timers objectForKey:[self StringFromEnum:connection.tag]];
+    [timer invalidate];
+    [self.timers removeObjectForKey:[self StringFromEnum:connection.tag]];
     
     if([self.receivedData objectForKey:[self StringFromEnum:(connection.tag)]] == nil){
         [self.receivedData setObject:[[NSMutableData alloc]initWithData:data] forKey:[self StringFromEnum:connection.tag]];
