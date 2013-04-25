@@ -14,6 +14,7 @@
 @interface PlayersViewController : UIViewController<UIAlertViewDelegate, UIGestureRecognizerDelegate>{
     
     BOOL buyPlayerViewIsUp;
+    BOOL isDraggingPlayer;
     Player *currentPlayer;
     CGRect currentPlayerCenter;
     CGPoint _priorPoint;

@@ -337,6 +337,7 @@
             {
                 //------------------Drawing event on the pitch------------------------
                 
+        
                 //The coordinate values of the feed go from 0-70 and 0-105
                 float y = ([[event objectForKey:@"x_coord"] floatValue]*370)/105;
                 float x = 280 - (([[event objectForKey:@"y_coord"] floatValue]*280)/70);
@@ -346,7 +347,7 @@
                 
                 eventNumber++;
                 
-                UIImageView *eventImageView = [[UIImageView alloc] initWithFrame:CGRectMake(x, y, 15, 15)];
+                UIImageView *eventImageView = [[UIImageView alloc] initWithFrame:CGRectMake(x - 7.5, y - 7.5, 15, 15)];
                 eventImageView.image = [UIImage imageNamed:@"EventOnPitch.png"];
                 
                 int eventLabelYOffset = 0;
@@ -357,7 +358,7 @@
                     eventLabelYOffset = -12;
                 }
                 
-                UILabel *eventLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, y + eventLabelYOffset, 50, 12)];
+                UILabel *eventLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, y, 50, 12)];
                 eventLabel.textAlignment = NSTextAlignmentCenter;
                 eventLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:12];
                 eventLabel.textColor = [UIColor whiteColor];

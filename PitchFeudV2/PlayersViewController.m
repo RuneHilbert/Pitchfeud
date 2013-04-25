@@ -115,6 +115,11 @@
   
     if([gestureRecognizer state] == UIGestureRecognizerStateBegan){
         
+        if(isDraggingPlayer)return;
+        
+        self.buyPlayersView.scrollView.scrollEnabled = NO;
+        isDraggingPlayer = YES;
+        
         NSLog(@"START");
           ((UIImageView*)playerView).image = [UIImage imageNamed:@"PlayerRedBlond.png"];
         [self.view bringSubviewToFront:playerView];
@@ -154,6 +159,8 @@
     
     if([gestureRecognizer state] == UIGestureRecognizerStateEnded){
         ((UIImageView*)playerView).image = [UIImage imageNamed:@"PlayerBWBlack.png"];
+        self.buyPlayersView.scrollView.scrollEnabled = NO;
+        isDraggingPlayer = NO;
         //If player is bought check if we want to sell it
         if(currentPlayer.bought){
             
