@@ -12,7 +12,7 @@
 
 @synthesize playerImage = _playerImage, firstName = _firstName, lastName = _lastName, shirtName = _shirtName, teamId = _teamId, playerId = _playerId, price = _price, cashGenerated = _cashGenerated, bought = _bought, positionInView = _positionInView;
 
-// Jeg ville hellere danse....så dans :)...........jdsfjldfsjkldfskjljjlksdfdfg
+// Jeg ville hellere danse....så dans :)...........jdsfjldfsjkldfskjljjlksdfdfghjkhjk
 
 -(id) init{
     
