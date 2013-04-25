@@ -7,7 +7,7 @@
 //
 
 // loll
-//jdklsjfksdjfælksdjf
+//jdklsjfksdjfælksdjfjkjhk
 #import "BuyPlayersViewController.h"
 
 @interface BuyPlayersViewController ()
