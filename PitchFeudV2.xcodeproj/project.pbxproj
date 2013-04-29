@@ -28,6 +28,7 @@
 		DD0426C2171C87DF00F78C39 /* ChallengesTop.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0426C1171C87DF00F78C39 /* ChallengesTop.png */; };
 		DD0426C5171C87EB00F78C39 /* ChallengesCreateNewButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0426C3171C87EB00F78C39 /* ChallengesCreateNewButton.png */; };
 		DD0426C6171C87EB00F78C39 /* ChallengesOpenChallengesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0426C4171C87EB00F78C39 /* ChallengesOpenChallengesButton.png */; };
+		DD29737B1729C5180061A9D7 /* TopBarInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = DD29737A1729C5180061A9D7 /* TopBarInfo.png */; };
 		DD6AC7CB171713D200585921 /* MatchesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7C9171713D200585921 /* MatchesButton.png */; };
 		DD6AC7CE1717166E00585921 /* MatchesTop.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6AC7CD1717166E00585921 /* MatchesTop.png */; };
 		DD6AC7D21717293600585921 /* FriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC7D11717293600585921 /* FriendsListViewController.m */; };
@@ -94,6 +95,24 @@
 		DDD99AEF1719894E00DDD595 /* MainMenuButton07SignOut.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99AE61719894E00DDD595 /* MainMenuButton07SignOut.png */; };
 		DDD99AF01719894E00DDD595 /* MainMenuButton08Leaderboards.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99AE71719894E00DDD595 /* MainMenuButton08Leaderboards.png */; };
 		DDD99AF2171991D400DDD595 /* Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD99AF1171991D400DDD595 /* Profile.png */; };
+		DDE0130117296CD4005372B7 /* TopbarClose.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE0130017296CD4005372B7 /* TopbarClose.png */; };
+		DDE0130317296D30005372B7 /* NewBetTopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE0130217296D30005372B7 /* NewBetTopBar.png */; };
+		DDE0130917296D50005372B7 /* NewBetMatchWinner.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE0130617296D50005372B7 /* NewBetMatchWinner.png */; };
+		DDE0130A17296D50005372B7 /* NewBetVsAnotherUser.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE0130717296D50005372B7 /* NewBetVsAnotherUser.png */; };
+		DDE0130B17296D50005372B7 /* NewBetMatchEvents.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE0130817296D50005372B7 /* NewBetMatchEvents.png */; };
+		DDE0130D17297004005372B7 /* NewBetPlayerVsPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE0130C17297004005372B7 /* NewBetPlayerVsPlayer.png */; };
+		DDE01313172977B2005372B7 /* NewBetOfferThisBet.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE01312172977B2005372B7 /* NewBetOfferThisBet.png */; };
+		DDE013171729797D005372B7 /* NewBetStep01.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE013141729797D005372B7 /* NewBetStep01.png */; };
+		DDE013181729797D005372B7 /* NewBetStep02.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE013151729797D005372B7 /* NewBetStep02.png */; };
+		DDE013191729797D005372B7 /* NewBetStep03.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE013161729797D005372B7 /* NewBetStep03.png */; };
+		DDE0131B172979BB005372B7 /* NewBetNext.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE0131A172979BB005372B7 /* NewBetNext.png */; };
+		DDE0132117297DA9005372B7 /* LatestCollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE0132017297DA7005372B7 /* LatestCollViewController.m */; };
+		DDE0132417297DC4005372B7 /* HighrollCollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE0132317297DC4005372B7 /* HighrollCollViewController.m */; };
+		DDE0132617297FF1005372B7 /* PitchBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE0132517297FF1005372B7 /* PitchBackground.png */; };
+		DDE013281729887F005372B7 /* BetsTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE013271729887F005372B7 /* BetsTabBar.png */; };
+		DDE0132C17298891005372B7 /* BetsTabBarLatest.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE013291729888F005372B7 /* BetsTabBarLatest.png */; };
+		DDE0132D17298891005372B7 /* BetsTabBarHighroller.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE0132A1729888F005372B7 /* BetsTabBarHighroller.png */; };
+		DDE0132E17298891005372B7 /* BetsTabBarPopular.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE0132B17298890005372B7 /* BetsTabBarPopular.png */; };
 		DDEE46531712A6600000ABFB /* BetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEE46521712A6600000ABFB /* BetsViewController.m */; };
 		DDF833D91728416300ED39BF /* CreateBet.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF833D81728416300ED39BF /* CreateBet.png */; };
 		F500C92516FCBEBA007B481E /* Pitch.png in Resources */ = {isa = PBXBuildFile; fileRef = F500C92416FCBEBA007B481E /* Pitch.png */; };
@@ -192,6 +211,7 @@
 		DD0426C1171C87DF00F78C39 /* ChallengesTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengesTop.png; sourceTree = "<group>"; };
 		DD0426C3171C87EB00F78C39 /* ChallengesCreateNewButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengesCreateNewButton.png; sourceTree = "<group>"; };
 		DD0426C4171C87EB00F78C39 /* ChallengesOpenChallengesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengesOpenChallengesButton.png; sourceTree = "<group>"; };
+		DD29737A1729C5180061A9D7 /* TopBarInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopBarInfo.png; sourceTree = "<group>"; };
 		DD6AC7C9171713D200585921 /* MatchesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MatchesButton.png; sourceTree = "<group>"; };
 		DD6AC7CD1717166E00585921 /* MatchesTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MatchesTop.png; sourceTree = "<group>"; };
 		DD6AC7D01717293600585921 /* FriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsListViewController.h; sourceTree = "<group>"; };
@@ -266,6 +286,26 @@
 		DDD99AE61719894E00DDD595 /* MainMenuButton07SignOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuButton07SignOut.png; sourceTree = "<group>"; };
 		DDD99AE71719894E00DDD595 /* MainMenuButton08Leaderboards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuButton08Leaderboards.png; sourceTree = "<group>"; };
 		DDD99AF1171991D400DDD595 /* Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Profile.png; sourceTree = "<group>"; };
+		DDE0130017296CD4005372B7 /* TopbarClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopbarClose.png; sourceTree = "<group>"; };
+		DDE0130217296D30005372B7 /* NewBetTopBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewBetTopBar.png; sourceTree = "<group>"; };
+		DDE0130617296D50005372B7 /* NewBetMatchWinner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewBetMatchWinner.png; sourceTree = "<group>"; };
+		DDE0130717296D50005372B7 /* NewBetVsAnotherUser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewBetVsAnotherUser.png; sourceTree = "<group>"; };
+		DDE0130817296D50005372B7 /* NewBetMatchEvents.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewBetMatchEvents.png; sourceTree = "<group>"; };
+		DDE0130C17297004005372B7 /* NewBetPlayerVsPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewBetPlayerVsPlayer.png; sourceTree = "<group>"; };
+		DDE01312172977B2005372B7 /* NewBetOfferThisBet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewBetOfferThisBet.png; sourceTree = "<group>"; };
+		DDE013141729797D005372B7 /* NewBetStep01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewBetStep01.png; sourceTree = "<group>"; };
+		DDE013151729797D005372B7 /* NewBetStep02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewBetStep02.png; sourceTree = "<group>"; };
+		DDE013161729797D005372B7 /* NewBetStep03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewBetStep03.png; sourceTree = "<group>"; };
+		DDE0131A172979BB005372B7 /* NewBetNext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewBetNext.png; sourceTree = "<group>"; };
+		DDE0131F17297DA7005372B7 /* LatestCollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestCollViewController.h; sourceTree = "<group>"; };
+		DDE0132017297DA7005372B7 /* LatestCollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestCollViewController.m; sourceTree = "<group>"; };
+		DDE0132217297DC4005372B7 /* HighrollCollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighrollCollViewController.h; sourceTree = "<group>"; };
+		DDE0132317297DC4005372B7 /* HighrollCollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighrollCollViewController.m; sourceTree = "<group>"; };
+		DDE0132517297FF1005372B7 /* PitchBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PitchBackground.png; sourceTree = "<group>"; };
+		DDE013271729887F005372B7 /* BetsTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetsTabBar.png; sourceTree = "<group>"; };
+		DDE013291729888F005372B7 /* BetsTabBarLatest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetsTabBarLatest.png; sourceTree = "<group>"; };
+		DDE0132A1729888F005372B7 /* BetsTabBarHighroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetsTabBarHighroller.png; sourceTree = "<group>"; };
+		DDE0132B17298890005372B7 /* BetsTabBarPopular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BetsTabBarPopular.png; sourceTree = "<group>"; };
 		DDEE46511712A6600000ABFB /* BetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetsViewController.h; sourceTree = "<group>"; };
 		DDEE46521712A6600000ABFB /* BetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetsViewController.m; sourceTree = "<group>"; };
 		DDF833D81728416300ED39BF /* CreateBet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreateBet.png; sourceTree = "<group>"; };
@@ -481,6 +521,10 @@
 			children = (
 				DDC3DEC517217623004EFBD4 /* CollectionViewController.h */,
 				DDC3DEC617217623004EFBD4 /* CollectionViewController.m */,
+				DDE0131F17297DA7005372B7 /* LatestCollViewController.h */,
+				DDE0132017297DA7005372B7 /* LatestCollViewController.m */,
+				DDE0132217297DC4005372B7 /* HighrollCollViewController.h */,
+				DDE0132317297DC4005372B7 /* HighrollCollViewController.m */,
 				DDC3DEC8172176B6004EFBD4 /* CollectionViewCell.h */,
 				DDC3DEC9172176B6004EFBD4 /* CollectionViewCell.m */,
 			);
@@ -506,10 +550,12 @@
 		DDD88ED617185036006E0F16 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DDE013271729887F005372B7 /* BetsTabBar.png */,
 				DD0426C1171C87DF00F78C39 /* ChallengesTop.png */,
 				DD6AC7D517172B3300585921 /* FriendsTop.png */,
 				DD6AC7E21717318B00585921 /* LeaguesTop.png */,
 				DDD88EE217185E7A006E0F16 /* LeagueTop02.png */,
+				DDE0130217296D30005372B7 /* NewBetTopBar.png */,
 				DD6AC7EC171736B400585921 /* MainMenuTop.png */,
 				DD6AC7CD1717166E00585921 /* MatchesTop.png */,
 				DD6AC7DA1717308900585921 /* SettingsTop.png */,
@@ -555,6 +601,10 @@
 		DDF932F317037C5D0052836B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DDE0132517297FF1005372B7 /* PitchBackground.png */,
+				DDE013141729797D005372B7 /* NewBetStep01.png */,
+				DDE013151729797D005372B7 /* NewBetStep02.png */,
+				DDE013161729797D005372B7 /* NewBetStep03.png */,
 				DDC3DECD17217948004EFBD4 /* Bets */,
 				DD6C81C31703827700EF3C9C /* BuyMenuBackground.png */,
 				DD0426BF171C87AA00F78C39 /* ChallengesList.png */,
@@ -608,6 +658,17 @@
 		F500C95616FCCB38007B481E /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				DD29737A1729C5180061A9D7 /* TopBarInfo.png */,
+				DDE013291729888F005372B7 /* BetsTabBarLatest.png */,
+				DDE0132A1729888F005372B7 /* BetsTabBarHighroller.png */,
+				DDE0132B17298890005372B7 /* BetsTabBarPopular.png */,
+				DDE0131A172979BB005372B7 /* NewBetNext.png */,
+				DDE01312172977B2005372B7 /* NewBetOfferThisBet.png */,
+				DDE0130C17297004005372B7 /* NewBetPlayerVsPlayer.png */,
+				DDE0130617296D50005372B7 /* NewBetMatchWinner.png */,
+				DDE0130717296D50005372B7 /* NewBetVsAnotherUser.png */,
+				DDE0130817296D50005372B7 /* NewBetMatchEvents.png */,
+				DDE0130017296CD4005372B7 /* TopbarClose.png */,
 				DDC3DECB172178D9004EFBD4 /* GameWindowButtonMyBetsClicked.png */,
 				DDC3DEBA1721702F004EFBD4 /* GameWindowButtonMarket.png */,
 				DDC3DEBB1721702F004EFBD4 /* GameWindowButtonMyBets.png */,
@@ -923,6 +984,23 @@
 				DDC3DEE3172182A4004EFBD4 /* GameWindowButtonBuyPlayer.png in Resources */,
 				DDF833D91728416300ED39BF /* CreateBet.png in Resources */,
 				D032DB9C172937E400B6F191 /* Pitch2.png in Resources */,
+				DDE0130117296CD4005372B7 /* TopbarClose.png in Resources */,
+				DDE0130317296D30005372B7 /* NewBetTopBar.png in Resources */,
+				DDE0130917296D50005372B7 /* NewBetMatchWinner.png in Resources */,
+				DDE0130A17296D50005372B7 /* NewBetVsAnotherUser.png in Resources */,
+				DDE0130B17296D50005372B7 /* NewBetMatchEvents.png in Resources */,
+				DDE0130D17297004005372B7 /* NewBetPlayerVsPlayer.png in Resources */,
+				DDE01313172977B2005372B7 /* NewBetOfferThisBet.png in Resources */,
+				DDE013171729797D005372B7 /* NewBetStep01.png in Resources */,
+				DDE013181729797D005372B7 /* NewBetStep02.png in Resources */,
+				DDE013191729797D005372B7 /* NewBetStep03.png in Resources */,
+				DDE0131B172979BB005372B7 /* NewBetNext.png in Resources */,
+				DDE0132617297FF1005372B7 /* PitchBackground.png in Resources */,
+				DDE013281729887F005372B7 /* BetsTabBar.png in Resources */,
+				DDE0132C17298891005372B7 /* BetsTabBarLatest.png in Resources */,
+				DDE0132D17298891005372B7 /* BetsTabBarHighroller.png in Resources */,
+				DDE0132E17298891005372B7 /* BetsTabBarPopular.png in Resources */,
+				DD29737B1729C5180061A9D7 /* TopBarInfo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -991,6 +1069,8 @@
 				DD0426BC171C821900F78C39 /* OpenBetsScrollViewController.m in Sources */,
 				DDC3DEC717217623004EFBD4 /* CollectionViewController.m in Sources */,
 				DDC3DECA172176B6004EFBD4 /* CollectionViewCell.m in Sources */,
+				DDE0132117297DA9005372B7 /* LatestCollViewController.m in Sources */,
+				DDE0132417297DC4005372B7 /* HighrollCollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1111,8 +1191,8 @@
 				GCC_PREFIX_HEADER = "PitchFeudV2/PitchFeudV2-Prefix.pch";
 				INFOPLIST_FILE = "PitchFeudV2/PitchFeudV2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "69B36F33-A99A-409F-BC95-DA01F46260E2";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "69B36F33-A99A-409F-BC95-DA01F46260E2";
+				PROVISIONING_PROFILE = "1D800130-A76F-44DB-AFF6-FECCF1D353EB";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D800130-A76F-44DB-AFF6-FECCF1D353EB";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1126,8 +1206,8 @@
 				GCC_PREFIX_HEADER = "PitchFeudV2/PitchFeudV2-Prefix.pch";
 				INFOPLIST_FILE = "PitchFeudV2/PitchFeudV2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "69B36F33-A99A-409F-BC95-DA01F46260E2";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "69B36F33-A99A-409F-BC95-DA01F46260E2";
+				PROVISIONING_PROFILE = "1D800130-A76F-44DB-AFF6-FECCF1D353EB";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1D800130-A76F-44DB-AFF6-FECCF1D353EB";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
