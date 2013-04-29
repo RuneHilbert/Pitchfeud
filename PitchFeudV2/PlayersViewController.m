@@ -182,6 +182,7 @@
             
             self.buyPlayersView.scrollView.scrollEnabled = YES;
             if([self CheckDropableLocation:[gestureRecognizer locationInView:self.view]]){
+               
                 
                 UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Buy Player" message:@"Buy this player?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Buy", nil];
                 alert.tag = 1;
@@ -325,6 +326,17 @@
     }
 }
 
+-(void)BuyPlayer{
+    
+     currentPlayer.bought = YES;
+    
+}
+
+-(void)SellPlayer{
+    
+    currentPlayer.bought = NO;
+    [self MovePlayerToInitialPositionInBuyView];
+}
 
 - (void)didReceiveMemoryWarning
 {
