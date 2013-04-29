@@ -44,16 +44,22 @@
 - (IBAction)showPopularView:(id)sender
 {
     [self.view bringSubviewToFront:_popularView];
+    [self.view sendSubviewToBack:_highrollerView];
+    [self.view sendSubviewToBack:_latestView];
 }
 
 - (IBAction)showLatestView:(id)sender
 {
     [self.view bringSubviewToFront:_highrollerView];
+    [self.view sendSubviewToBack:_popularView];
+    [self.view sendSubviewToBack:_latestView];
 }
 
 - (IBAction)showHighrollerView:(id)sender
 {
     [self.view bringSubviewToFront:_latestView];
+    [self.view sendSubviewToBack:_highrollerView];
+    [self.view sendSubviewToBack:_popularView];
 }
 
 - (void)didReceiveMemoryWarning
