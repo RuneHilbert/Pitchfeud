@@ -44,6 +44,7 @@ static PlayerManager *instance = nil;
             
             Player *testPlayer = [[Player alloc]init];
             testPlayer.playerImage.tag = i;
+            testPlayer.price = 100;
             [self.allTeams replaceObjectAtIndex:i withObject:testPlayer];
             
         }
@@ -52,6 +53,7 @@ static PlayerManager *instance = nil;
             
             Player *testPlayer = [[Player alloc]init];
             testPlayer.playerImage.tag = i;
+            testPlayer.price = 200;
             [self.allTeams replaceObjectAtIndex:i withObject:testPlayer];
         }
         

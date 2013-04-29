@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D00EA0EE1700A54B00D0EFCC /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D00EA0ED1700A54B00D0EFCC /* PlayerManager.m */; };
 		D00EA0F11700A79800D0EFCC /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00EA0F01700A79800D0EFCC /* PlayersViewController.m */; };
+		D01AE08E172E7478009DBBFB /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D01AE08C172E7478009DBBFB /* GameManager.m */; };
+		D01AE08F172E7AC8009DBBFB /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D01AE08C172E7478009DBBFB /* GameManager.m */; };
 		D02617A5170B0A6900DD1CE7 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = D02617A4170B0A6900DD1CE7 /* Player.m */; };
 		D02AC09F170A160E00F9F23C /* PlayerButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D02AC09E170A160E00F9F23C /* PlayerButtonViewController.m */; };
 		D02AD1BC16FC6B460012285C /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D02AD1BB16FC6B460012285C /* ConnectionManager.m */; };
@@ -182,6 +184,8 @@
 		D00EA0ED1700A54B00D0EFCC /* PlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerManager.m; sourceTree = "<group>"; };
 		D00EA0EF1700A79700D0EFCC /* PlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersViewController.h; sourceTree = "<group>"; };
 		D00EA0F01700A79800D0EFCC /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewController.m; sourceTree = "<group>"; };
+		D01AE08C172E7478009DBBFB /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManager.m; sourceTree = "<group>"; };
+		D01AE08D172E7478009DBBFB /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
 		D02617A3170B0A6900DD1CE7 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		D02617A4170B0A6900DD1CE7 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		D02AC09D170A160E00F9F23C /* PlayerButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerButtonViewController.h; sourceTree = "<group>"; };
@@ -406,6 +410,8 @@
 		D02AD1B916FC6B190012285C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				D01AE08C172E7478009DBBFB /* GameManager.m */,
+				D01AE08D172E7478009DBBFB /* GameManager.h */,
 				D02AD1BA16FC6B460012285C /* ConnectionManager.h */,
 				D02AD1BB16FC6B460012285C /* ConnectionManager.m */,
 				D00EA0EC1700A54B00D0EFCC /* PlayerManager.h */,
@@ -1036,6 +1042,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01AE08F172E7AC8009DBBFB /* GameManager.m in Sources */,
 				D03CC1CE16FF4297003702B5 /* LineView.m in Sources */,
 				F57E0F8516FB45EB00E2E803 /* main.m in Sources */,
 				F57E0F8916FB45EB00E2E803 /* AppDelegate.m in Sources */,
@@ -1085,6 +1092,7 @@
 				F500C97316FCD261007B481E /* MainViewController.m in Sources */,
 				D03CC1CD16FF41B2003702B5 /* LineView.m in Sources */,
 				DD6C81D51703873E00EF3C9C /* PlayersArraysViewController.m in Sources */,
+				D01AE08E172E7478009DBBFB /* GameManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

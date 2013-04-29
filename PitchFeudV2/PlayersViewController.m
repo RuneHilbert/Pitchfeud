@@ -13,7 +13,7 @@
 @end
 
 @implementation PlayersViewController
-@synthesize pointsLabel = _pointsLabel, buyPlayersView = _buyPlayersView, playerDropableLocations = _playerDropableLocations;
+@synthesize pointsLabel = _pointsLabel, scoreLabel = _scoreLabel, bankLabel = _bankLabel, buyPlayersView = _buyPlayersView, playerDropableLocations = _playerDropableLocations;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -45,6 +45,10 @@
         
     }
 	// Do any additional setup after loading the view.
+    
+    [[GameManager Instance]StartNewMatch];
+    self.bankLabel.text = [NSString stringWithFormat:@"%d", [GameManager Instance].Bank];
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -175,9 +179,12 @@
             //If drop on scroll
             if([gestureRecognizer locationInView:self.view].y > 300){
                 
+                /*
                 UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Sell Player" message:@"Sell this player?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Sell", nil];
                 alert.tag = 0;
                 [alert show];
+                 */
+                [self SellPlayer];
                 
             }else if([self CheckDropableLocation:[gestureRecognizer locationInView:self.view]]){
                 
@@ -192,10 +199,12 @@
             self.buyPlayersView.scrollView.scrollEnabled = YES;
             if([self CheckDropableLocation:[gestureRecognizer locationInView:self.view]]){
                
-                
+                /*
                 UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Buy Player" message:@"Buy this player?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Buy", nil];
                 alert.tag = 1;
                 [alert show];
+                 */
+                [self BuyPlayer];
                 
             }else{//Move back to original position in scroll view
                 [self MoveImageBackToScrollView:[gestureRecognizer view]];
@@ -292,6 +301,21 @@
     
 }
 
+-(void)BuyPlayer{
+    
+    currentPlayer.bought = YES;
+    [GameManager Instance].Bank -= currentPlayer.price;
+    self.bankLabel.text = [NSString stringWithFormat:@"%d", [GameManager Instance].Bank];
+    
+}
+
+-(void)SellPlayer{
+    
+    currentPlayer.bought = NO;
+    [GameManager Instance].Bank += currentPlayer.price;
+    [self MovePlayerToInitialPositionInBuyView];
+    self.bankLabel.text = [NSString stringWithFormat:@"%d", [GameManager Instance].Bank];
+}
 
 -(void)UpdatePointsLabel{
     
@@ -333,18 +357,6 @@
         default:
             break;
     }
-}
-
--(void)BuyPlayer{
-    
-     currentPlayer.bought = YES;
-    
-}
-
--(void)SellPlayer{
-    
-    currentPlayer.bought = NO;
-    [self MovePlayerToInitialPositionInBuyView];
 }
 
 - (void)didReceiveMemoryWarning

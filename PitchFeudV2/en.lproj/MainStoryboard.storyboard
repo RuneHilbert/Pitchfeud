@@ -719,7 +719,9 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="bankLabel" destination="d4X-Tr-XLS" id="2k7-MS-EpB"/>
                         <outlet property="pointsLabel" destination="CeF-yl-x7t" id="fxm-Q8-fm4"/>
+                        <outlet property="scoreLabel" destination="CeF-yl-x7t" id="nvR-Lp-ah7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3PU-TN-PaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2582,7 +2584,9 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PlayersViewController.h"/>
             <relationships>
                 <relationship kind="action" name="ShowBuyPlayer:"/>
+                <relationship kind="outlet" name="bankLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pointsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scrollViewParent" candidateClass="UIScrollView"/>
             </relationships>
         </class>
@@ -2603,6 +2607,9 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

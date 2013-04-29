@@ -24,6 +24,22 @@ static GameManager *instance = nil;
     return instance;
 }
 
+-(NSInteger)Bank{
+    
+    return [[[NSUserDefaults standardUserDefaults]valueForKey:@"Bank"]integerValue];
+}
+
+-(void)setBank:(NSInteger)newBankValue{
+    
+    [[NSUserDefaults standardUserDefaults]setInteger:newBankValue forKey:@"Bank"];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+}
+
+-(void)StartNewMatch{
+    
+    self.Bank = 1000;
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"NewMatchStarted" object:nil];
+}
 
 
 @end

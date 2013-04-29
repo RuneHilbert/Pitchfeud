@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 //#import "PlayerManager.h"
+#import "GameManager.h"
 #import "BuyPlayersViewController.h"
 #import "MainViewController.h"
 
@@ -22,7 +23,7 @@
     UIImageView *playerClone;
 }
 
-@property (nonatomic, strong) IBOutlet UILabel *pointsLabel;
+@property (nonatomic, strong) IBOutlet UILabel *pointsLabel, *scoreLabel, *bankLabel;
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollViewParent;
 @property (nonatomic, strong) BuyPlayersViewController *buyPlayersView;
 @property (nonatomic, strong) NSMutableArray *playerDropableLocations;
