@@ -539,7 +539,7 @@
     
    // NSNumber *offsetTimestamp;
    // NSNumber *limitTimestamp;
-    offsetTimestamp = [[NSUserDefaults standardUserDefaults] objectForKey:@"offsetTimestamp"];
+   // offsetTimestamp = [[NSUserDefaults standardUserDefaults] objectForKey:@"offsetTimestamp"];
     
     if(offsetTimestamp==nil){//if no previous time was saved, start from 0
         offsetTimestamp = [NSNumber numberWithInt:0];
@@ -549,7 +549,7 @@
     }
    // [[NSUserDefaults standardUserDefaults] setObject:offsetTimestamp forKey:@"offsetTimestamp"];
     
-    limitTimestamp = [[NSUserDefaults standardUserDefaults] objectForKey:@"limitTimestamp"];
+  //  limitTimestamp = [[NSUserDefaults standardUserDefaults] objectForKey:@"limitTimestamp"];
     
     if(limitTimestamp==nil){//if no previous time was saved we only want the first minute
         limitTimestamp = [NSNumber numberWithInt:60];

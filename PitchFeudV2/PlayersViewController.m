@@ -108,12 +108,14 @@
 
 -(void)StartEndTouch:(UILongPressGestureRecognizer *)gestureRecognizer{
     
-    if(!buyPlayerViewIsUp || isDraggingPlayer) return;
+    if(!buyPlayerViewIsUp) return;
     
     MainViewController *mv = (MainViewController*)[self parentViewController];
     UIView *playerView = gestureRecognizer.view;
   
     if([gestureRecognizer state] == UIGestureRecognizerStateBegan){
+        
+        if(isDraggingPlayer)return;
         
         self.buyPlayersView.scrollView.scrollEnabled = NO;
         isDraggingPlayer = YES;
@@ -144,6 +146,9 @@
     if([gestureRecognizer state] == UIGestureRecognizerStateChanged){//moving
         
         //   NSLog(@"Move");
+        
+        if(![[[PlayerManager Instance].allTeams objectAtIndex:playerView.tag] isEqual:currentPlayer])return;
+        
         CGPoint point = [gestureRecognizer locationInView:playerView.superview];
         if (gestureRecognizer.state == UIGestureRecognizerStateChanged) {
             CGPoint center = playerView.center;
@@ -156,9 +161,13 @@
     }
     
     if([gestureRecognizer state] == UIGestureRecognizerStateEnded){
+        
+        if(![[[PlayerManager Instance].allTeams objectAtIndex:playerView.tag] isEqual:currentPlayer])return;
+        isDraggingPlayer = NO;
+        
         ((UIImageView*)playerView).image = [UIImage imageNamed:@"PlayerBWBlack.png"];
         self.buyPlayersView.scrollView.scrollEnabled = NO;
-        isDraggingPlayer = NO;
+        
         //If player is bought check if we want to sell it
         if(currentPlayer.bought){
             
