@@ -49,6 +49,8 @@
     [[GameManager Instance]StartNewMatch];
     self.bankLabel.text = [NSString stringWithFormat:@"%d", [GameManager Instance].Bank];
     
+    
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated{

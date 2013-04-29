@@ -13,7 +13,8 @@
 
 typedef enum{
     
-    Events
+    Events,
+    MinorEvents
     
 }Tag;
 
@@ -22,5 +23,6 @@ typedef enum{
 -(NSDictionary*)GetJSONDictionaryFromTag:(Tag)tag;
 -(NSString*)StringFromEnum:(NSInteger)tag;
 -(void)GetEventsWithMatchID: (NSInteger)matchId AndOffsetTimestamp:(NSInteger)offsetTimestamp AndLimitTimestamp:(NSInteger)limitTimestamp;
+-(void)GetMinorEventsWithMatchID:(NSInteger)matchId AndOffsetTimestamp:(NSInteger)offsetTimestamp AndLimitTimestamp:(NSInteger)limitTimestamp;
 
 @end

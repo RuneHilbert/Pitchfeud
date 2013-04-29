@@ -54,14 +54,20 @@ NSString *webserviceLocation = @"http://pitchfeud.astdev.lt/api/";
 
 -(void)GetEventsWithMatchID: (NSInteger)matchId AndOffsetTimestamp:(NSInteger)offsetTimestamp AndLimitTimestamp:(NSInteger)limitTimestamp{
   
-    NSString *methodName = [NSString stringWithFormat:@"events?offsetTimestamp=%d&limitTimestamp=%d&matchId=%d",offsetTimestamp,limitTimestamp,matchId];
-    [self StartGETConnectionWithWebserviceLocation: webserviceLocation AndName: methodName AndTag:Events];
+    NSString *urlString = [NSString stringWithFormat:@"events?offsetTimestamp=%d&limitTimestamp=%d&matchId=%d",offsetTimestamp,limitTimestamp,matchId];
+    [self StartGETConnectionWithWebserviceLocation: webserviceLocation AndURLString: urlString AndTag:Events];
     
 }
 
--(NSURLConnectionWithTag*)StartGETConnectionWithWebserviceLocation: (NSString*)location AndName:(NSString*)name AndTag:(Tag)tag{
+-(void)GetMinorEventsWithMatchID:(NSInteger)matchId AndOffsetTimestamp:(NSInteger)offsetTimestamp AndLimitTimestamp:(NSInteger)limitTimestamp{
     
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[location stringByAppendingString:name]]];
+    NSString *urlString = [NSString stringWithFormat:@"touches?offsetTimestamp=%d&limitTimestamp=%d&matchId=%d",offsetTimestamp,limitTimestamp,matchId];
+    [self StartGETConnectionWithWebserviceLocation: webserviceLocation AndURLString: urlString AndTag:MinorEvents];
+}
+
+-(NSURLConnectionWithTag*)StartGETConnectionWithWebserviceLocation: (NSString*)location AndURLString:(NSString*)urlString AndTag:(Tag)tag{
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[location stringByAppendingString:urlString]]];
     [request setHTTPMethod:@"GET"];
     
     NSURLConnectionWithTag *connection = [[NSURLConnectionWithTag alloc] initWithRequest: request delegate:self startImmediately:YES WithTag:tag];
@@ -179,7 +185,9 @@ NSString *webserviceLocation = @"http://pitchfeud.astdev.lt/api/";
         case Events:
             s = @"Events";
             break;
-
+        case MinorEvents:
+            s = @"MinorEvents";
+            break;
         default:
             break;            
     }

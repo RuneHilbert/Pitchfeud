@@ -69,6 +69,8 @@
     seconds = 0;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(EventDataReceived) name: [[ConnectionManager Instance]StringFromEnum:Events] object:nil];
     [self ReceiveEventData];
+    
+    [[ConnectionManager Instance]GetMinorEventsWithMatchID:1 AndOffsetTimestamp:0 AndLimitTimestamp:60];
 }
 
 - (void)timeDateTimerFireMethod:(NSTimer*)theTimer
