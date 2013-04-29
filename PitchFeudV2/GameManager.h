@@ -11,6 +11,7 @@
 @interface GameManager : NSObject
 
 @property NSInteger Bank;
+@property NSInteger Score;
 
 +(GameManager*)Instance;
 -(void)StartNewMatch;

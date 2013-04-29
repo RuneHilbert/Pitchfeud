@@ -35,6 +35,17 @@ static GameManager *instance = nil;
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
 
+-(NSInteger)Score{
+    
+    return [[[NSUserDefaults standardUserDefaults]valueForKey:@"Score"]integerValue];
+}
+
+-(void)setScore:(NSInteger)newScoreValue{
+    
+    [[NSUserDefaults standardUserDefaults]setInteger:newScoreValue forKey:@"Score"];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+}
+
 -(void)StartNewMatch{
     
     self.Bank = 1000;
