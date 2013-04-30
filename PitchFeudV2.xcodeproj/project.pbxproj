@@ -22,10 +22,6 @@
 		D03CC1D416FF6326003702B5 /* EventOnPitch.png in Resources */ = {isa = PBXBuildFile; fileRef = D03CC1D216FF6326003702B5 /* EventOnPitch.png */; };
 		D03CC1D516FF6326003702B5 /* EventOnPitch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D03CC1D316FF6326003702B5 /* EventOnPitch@2x.png */; };
 		DD0426B0171C707600F78C39 /* CreateBetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0426AF171C707600F78C39 /* CreateBetViewController.m */; };
-		DD0426B3171C708200F78C39 /* OpenBetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0426B2171C708200F78C39 /* OpenBetsViewController.m */; };
-		DD0426B6171C753F00F78C39 /* BetsPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0426B5171C753E00F78C39 /* BetsPopUpViewController.m */; };
-		DD0426B9171C7ACF00F78C39 /* BetsScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0426B8171C7ACF00F78C39 /* BetsScrollViewController.m */; };
-		DD0426BC171C821900F78C39 /* OpenBetsScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0426BB171C821900F78C39 /* OpenBetsScrollViewController.m */; };
 		DD0426C0171C87AA00F78C39 /* ChallengesList.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0426BF171C87AA00F78C39 /* ChallengesList.png */; };
 		DD0426C2171C87DF00F78C39 /* ChallengesTop.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0426C1171C87DF00F78C39 /* ChallengesTop.png */; };
 		DD0426C5171C87EB00F78C39 /* ChallengesCreateNewButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0426C3171C87EB00F78C39 /* ChallengesCreateNewButton.png */; };
@@ -203,14 +199,6 @@
 		D03CC1D316FF6326003702B5 /* EventOnPitch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EventOnPitch@2x.png"; sourceTree = "<group>"; };
 		DD0426AE171C707600F78C39 /* CreateBetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateBetViewController.h; sourceTree = "<group>"; };
 		DD0426AF171C707600F78C39 /* CreateBetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateBetViewController.m; sourceTree = "<group>"; };
-		DD0426B1171C708200F78C39 /* OpenBetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenBetsViewController.h; sourceTree = "<group>"; };
-		DD0426B2171C708200F78C39 /* OpenBetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenBetsViewController.m; sourceTree = "<group>"; };
-		DD0426B4171C753E00F78C39 /* BetsPopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetsPopUpViewController.h; sourceTree = "<group>"; };
-		DD0426B5171C753E00F78C39 /* BetsPopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetsPopUpViewController.m; sourceTree = "<group>"; };
-		DD0426B7171C7ACF00F78C39 /* BetsScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetsScrollViewController.h; sourceTree = "<group>"; };
-		DD0426B8171C7ACF00F78C39 /* BetsScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetsScrollViewController.m; sourceTree = "<group>"; };
-		DD0426BA171C821800F78C39 /* OpenBetsScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenBetsScrollViewController.h; sourceTree = "<group>"; };
-		DD0426BB171C821900F78C39 /* OpenBetsScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenBetsScrollViewController.m; sourceTree = "<group>"; };
 		DD0426BF171C87AA00F78C39 /* ChallengesList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengesList.png; sourceTree = "<group>"; };
 		DD0426C1171C87DF00F78C39 /* ChallengesTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengesTop.png; sourceTree = "<group>"; };
 		DD0426C3171C87EB00F78C39 /* ChallengesCreateNewButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengesCreateNewButton.png; sourceTree = "<group>"; };
@@ -416,6 +404,7 @@
 				D02AD1BB16FC6B460012285C /* ConnectionManager.m */,
 				D00EA0EC1700A54B00D0EFCC /* PlayerManager.h */,
 				D00EA0ED1700A54B00D0EFCC /* PlayerManager.m */,
+				DD1E2732172E92C3008EA6F0 /* Helpers */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -423,39 +412,15 @@
 		D02AD1BD16FC6D380012285C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D02617A2170B0A4900DD1CE7 /* Objects */,
+				DD1E2731172E9298008EA6F0 /* Main */,
 				DD6C81CB1703859800EF3C9C /* Buy Player */,
+				DDD88ED7171854DC006E0F16 /* Bets */,
+				DD1E2730172E9202008EA6F0 /* Pitch */,
 				F5618D2516FDE32800CC07C9 /* Chat */,
-				F500C92016FCB4AC007B481E /* ECSlidingViewController */,
-				F500C96016FCD0F6007B481E /* InitViewController.h */,
-				F500C96116FCD0F6007B481E /* InitViewController.m */,
-				D03CC1CB16FF41B2003702B5 /* LineView.h */,
-				D03CC1CC16FF41B2003702B5 /* LineView.m */,
-				F500C97016FCD261007B481E /* MainViewController.h */,
-				F500C97116FCD261007B481E /* MainViewController.m */,
 				F5618D2416FDE32200CC07C9 /* Menu */,
 				F5618D2916FDE71B00CC07C9 /* Navigation */,
-				D02AD1BE16FC6D530012285C /* NSURLConnectionWithTag.h */,
-				D00EA0EF1700A79700D0EFCC /* PlayersViewController.h */,
-				D00EA0F01700A79800D0EFCC /* PlayersViewController.m */,
-				D02AD1BF16FC6D530012285C /* NSURLConnectionWithTag.m */,
-				D03CC1CF16FF56BF003702B5 /* PitchViewController.h */,
-				D03CC1D016FF56BF003702B5 /* PitchViewController.m */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		DD0426BD171C822100F78C39 /* Open Bets */ = {
-			isa = PBXGroup;
-			children = (
-				DD0426BA171C821800F78C39 /* OpenBetsScrollViewController.h */,
-				DD0426BB171C821900F78C39 /* OpenBetsScrollViewController.m */,
-				DD0426B1171C708200F78C39 /* OpenBetsViewController.h */,
-				DD0426B2171C708200F78C39 /* OpenBetsViewController.m */,
-				DD0426B4171C753E00F78C39 /* BetsPopUpViewController.h */,
-				DD0426B5171C753E00F78C39 /* BetsPopUpViewController.m */,
-			);
-			name = "Open Bets";
 			sourceTree = "<group>";
 		};
 		DD0426BE171C823100F78C39 /* Create New */ = {
@@ -465,6 +430,35 @@
 				DD0426AF171C707600F78C39 /* CreateBetViewController.m */,
 			);
 			name = "Create New";
+			sourceTree = "<group>";
+		};
+		DD1E2730172E9202008EA6F0 /* Pitch */ = {
+			isa = PBXGroup;
+			children = (
+				D03CC1CF16FF56BF003702B5 /* PitchViewController.h */,
+				D03CC1D016FF56BF003702B5 /* PitchViewController.m */,
+				D03CC1CB16FF41B2003702B5 /* LineView.h */,
+				D03CC1CC16FF41B2003702B5 /* LineView.m */,
+			);
+			name = Pitch;
+			sourceTree = "<group>";
+		};
+		DD1E2731172E9298008EA6F0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F500C97016FCD261007B481E /* MainViewController.h */,
+				F500C97116FCD261007B481E /* MainViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		DD1E2732172E92C3008EA6F0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D02AD1BE16FC6D530012285C /* NSURLConnectionWithTag.h */,
+				D02AD1BF16FC6D530012285C /* NSURLConnectionWithTag.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		DD6AC7CF1717292300585921 /* Friends */ = {
@@ -488,12 +482,15 @@
 		DD6C81CB1703859800EF3C9C /* Buy Player */ = {
 			isa = PBXGroup;
 			children = (
+				D00EA0EF1700A79700D0EFCC /* PlayersViewController.h */,
+				D00EA0F01700A79800D0EFCC /* PlayersViewController.m */,
 				DD6C81C51703839200EF3C9C /* BuyPlayersViewController.h */,
 				DD6C81C61703839200EF3C9C /* BuyPlayersViewController.m */,
 				DD6C81C81703858D00EF3C9C /* PlayersArraysViewController.h */,
 				DD6C81C91703858E00EF3C9C /* PlayersArraysViewController.m */,
 				D02AC09D170A160E00F9F23C /* PlayerButtonViewController.h */,
 				D02AC09E170A160E00F9F23C /* PlayerButtonViewController.m */,
+				D02617A2170B0A4900DD1CE7 /* Objects */,
 			);
 			name = "Buy Player";
 			sourceTree = "<group>";
@@ -574,13 +571,10 @@
 		DDD88ED7171854DC006E0F16 /* Bets */ = {
 			isa = PBXGroup;
 			children = (
-				DD0426B7171C7ACF00F78C39 /* BetsScrollViewController.h */,
-				DD0426B8171C7ACF00F78C39 /* BetsScrollViewController.m */,
 				DDEE46511712A6600000ABFB /* BetsViewController.h */,
 				DDEE46521712A6600000ABFB /* BetsViewController.m */,
 				DDC3DEC11721724B004EFBD4 /* CollectionView */,
 				DD0426BE171C823100F78C39 /* Create New */,
-				DD0426BD171C822100F78C39 /* Open Bets */,
 			);
 			name = Bets;
 			sourceTree = "<group>";
@@ -715,7 +709,6 @@
 			isa = PBXGroup;
 			children = (
 				DDD88ED8171854EC006E0F16 /* Leagues */,
-				DDD88ED7171854DC006E0F16 /* Bets */,
 				DD6AC7DD1717310E00585921 /* Settings */,
 				DD6AC7CF1717292300585921 /* Friends */,
 				DD7578C217132575004B0D3E /* MenuViewController.h */,
@@ -742,8 +735,11 @@
 		F5618D2916FDE71B00CC07C9 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				F500C96016FCD0F6007B481E /* InitViewController.h */,
+				F500C96116FCD0F6007B481E /* InitViewController.m */,
 				F5618D2A16FDE74100CC07C9 /* BasicViewController.h */,
 				F5618D2B16FDE74100CC07C9 /* BasicViewController.m */,
+				F500C92016FCB4AC007B481E /* ECSlidingViewController */,
 			);
 			name = Navigation;
 			sourceTree = "<group>";
@@ -1070,10 +1066,6 @@
 				DD6AC7E01717312600585921 /* SettingsViewController.m in Sources */,
 				DDD88EDB1718550C006E0F16 /* LeagueViewController.m in Sources */,
 				DD0426B0171C707600F78C39 /* CreateBetViewController.m in Sources */,
-				DD0426B3171C708200F78C39 /* OpenBetsViewController.m in Sources */,
-				DD0426B6171C753F00F78C39 /* BetsPopUpViewController.m in Sources */,
-				DD0426B9171C7ACF00F78C39 /* BetsScrollViewController.m in Sources */,
-				DD0426BC171C821900F78C39 /* OpenBetsScrollViewController.m in Sources */,
 				DDC3DEC717217623004EFBD4 /* CollectionViewController.m in Sources */,
 				DDC3DECA172176B6004EFBD4 /* CollectionViewCell.m in Sources */,
 				DDE0132117297DA9005372B7 /* LatestCollViewController.m in Sources */,

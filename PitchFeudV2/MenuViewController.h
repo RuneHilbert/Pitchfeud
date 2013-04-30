@@ -13,7 +13,6 @@
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 
 - (IBAction)goToMain:(id)sender;
-- (IBAction)goToBets:(id)sender;
 - (IBAction)goToFriends:(id)sender;
 - (IBAction)goToMatches:(id)sender;
 - (IBAction)goToLeagues:(id)sender;

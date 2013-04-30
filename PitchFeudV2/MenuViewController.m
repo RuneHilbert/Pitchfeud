@@ -44,7 +44,7 @@
 		[self loadScrollViewWithPage:i];
 	}
 	
-	self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, 715);
+	self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, 650);
 }
 
 - (void)loadScrollViewWithPage:(NSInteger)page {
@@ -62,7 +62,7 @@
 	// add the controller's view to the scroll view
     if (controller.view.superview == nil) {
         CGRect frame = self.scrollView.frame;
-        frame.size.height = 715;
+        frame.size.height = 650;
         frame.origin.y = frame.size.height * page;
         frame.origin.x = 0;
         controller.view.frame = frame;
@@ -77,15 +77,6 @@
         self.slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"mainView"];
         self.slidingViewController.topViewController.view.frame = frame;
         [self.slidingViewController resetTopView];}];
-}
-
-- (IBAction)goToBets:(id)sender
-{
-    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
-    CGRect frame = self.slidingViewController.topViewController.view.frame;
-    self.slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"betsView"];
-    self.slidingViewController.topViewController.view.frame = frame;
-    [self.slidingViewController resetTopView];}];
 }
 
 - (IBAction)goToFriends:(id)sender
