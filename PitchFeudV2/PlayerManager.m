@@ -63,20 +63,39 @@ static PlayerManager *instance = nil;
             [self.allTeams replaceObjectAtIndex:i withObject:testPlayer];
         }
         */
-        NSMutableArray *players = [[NSMutableArray alloc]init];
-        NSMutableDictionary *playerdic = [[NSMutableDictionary alloc]init];
-        [playerdic setObject:@"John" forKey:@"name"];
-        [playerdic setObject:[NSNumber numberWithInteger:1] forKey:@"playerNumber"];
-        [playerdic setObject:@"team 1" forKey:@"team"];
-        [playerdic setObject:[NSNumber numberWithBool:YES] forKey:@"isHome"];
-        
-        [players addObject:playerdic];
-        
+        NSMutableArray *players = [[NSMutableArray alloc]initWithObjects:
+                                   [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"John",@"firstName",
+                                    @"Johnson",@"lastName",
+                                    @"team 1", @"team",
+                                    [NSNumber numberWithInteger:1], @"PlayerNumber",
+                                    [NSNumber numberWithBool:YES], @"isHome",  nil]
+                                   ,
+                                   [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"John2",@"firstName",
+                                      @"Johnson",@"lastName",
+                                      @"team 1", @"team",
+                                      [NSNumber numberWithInteger:2], @"PlayerNumber",
+                                      [NSNumber numberWithBool:YES], @"isHome",  nil]
+                                   ,
+                                   [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"John3",@"firstName",
+                                    @"Johnson",@"lastName",
+                                    @"team 1", @"team",
+                                    [NSNumber numberWithInteger:3], @"PlayerNumber",
+                                    [NSNumber numberWithBool:YES], @"isHome",  nil]
+                                   ,
+                                   [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"John",@"firstName",
+                                    @"Johnson",@"lastName",
+                                    @"team 1", @"team",
+                                    [NSNumber numberWithInteger:6], @"PlayerNumber",
+                                    [NSNumber numberWithBool:YES], @"isHome",  nil]
+                                   ,
+                                   nil];
+     
+       
         for(NSDictionary *p in players){
             
-            NSInteger index = [[playerdic objectForKey:@"isHome"]integerValue] - 1;
+            NSInteger index = [[p objectForKey:@"PlayerNumber"]integerValue] - 1;
             
-            if(![[playerdic objectForKey:@"isHome"]boolValue]){
+            if(![[p objectForKey:@"isHome"]boolValue]){
                 
                 index += 25;
             }

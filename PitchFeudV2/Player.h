@@ -11,7 +11,7 @@
 @interface Player : NSObject<UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UIImageView *playerImage;
-@property (nonatomic, strong) NSString *name, *team;
+@property (nonatomic, strong) NSString *firstName, *lastName, *team;
 @property (assign) NSInteger playerNumber, price;
 @property (assign) BOOL bought;
 @property (assign) CGPoint positionInView;

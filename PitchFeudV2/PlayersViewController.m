@@ -331,7 +331,7 @@
 -(void)SellPlayer{
     
     currentPlayer.bought = NO;
-    [GameManager Instance].Bank += currentPlayer.price;
+    [GameManager Instance].Bank += currentPlayer.price/2;
     [self MovePlayerToInitialPositionInBuyView];
     self.bankLabel.text = [NSString stringWithFormat:@"%d", [GameManager Instance].Bank];
 }

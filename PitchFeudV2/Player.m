@@ -10,7 +10,7 @@
 
 @implementation Player
 
-@synthesize playerImage = _playerImage, name = _name, team = _team, playerNumber = _playerNumber, bought = _bought, positionInView = _positionInView;
+@synthesize playerImage = _playerImage, firstName = _firstName, lastName = _lastName, team = _team, playerNumber = _playerNumber, bought = _bought, positionInView = _positionInView;
 
 
 -(id) init{
@@ -27,13 +27,13 @@
     
     if(self = [super init]){
         
-        self.name = [JSONdictioary objectForKey:@"name"];
+        self.firstName = [JSONdictioary objectForKey:@"firstName"];
+        self.lastName = [JSONdictioary objectForKey:@"lastName"];
         self.team = [JSONdictioary objectForKey:@"team"];
-        self.playerNumber = [[JSONdictioary objectForKey:@"playerNumber"]integerValue];
+        self.playerNumber = [[JSONdictioary objectForKey:@"PlayerNumber"]integerValue];
         self.bought = NO;
         self.playerImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"PlayerBWBlack.png"]];
-        
-        self.playerImage.tag = self.playerNumber - 1;
+        self.price = 100;
         
         //Under construction...
         /*
@@ -58,9 +58,10 @@
         frame.size.width = frame.size.width / 2;
         self.playerImage.frame = frame;
         self.playerImage.userInteractionEnabled = YES;
+         self.playerImage.tag = self.playerNumber - 1;
         
         UILabel *nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, self.playerImage.frame.size.height - 15, self.playerImage.frame.size.width, 15)];
-        nameLabel.text = self.name;
+        nameLabel.text = self.firstName;
         
         UILabel *numberLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.playerImage.frame.size.width/2, 15)];
         numberLabel.text = [NSString stringWithFormat:@"%d", self.playerNumber];
