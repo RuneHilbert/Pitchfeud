@@ -58,7 +58,6 @@
         frame.size.width = frame.size.width / 2;
         self.playerImage.frame = frame;
         self.playerImage.userInteractionEnabled = YES;
-         self.playerImage.tag = self.playerNumber - 1;
         
         UILabel *nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, self.playerImage.frame.size.height - 15, self.playerImage.frame.size.width, 15)];
         nameLabel.text = self.firstName;

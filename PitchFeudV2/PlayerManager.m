@@ -31,11 +31,15 @@ static PlayerManager *instance = nil;
     if (self = [super init]){
         
         self.allTeams = [[NSMutableArray alloc]init];
+        
         for(int i = 0; i < 51; i++){
             
             [self.allTeams addObject:[NSNull null]];
             
         }
+        
+        self.homeTeam = [[NSMutableArray alloc]init];
+        self.awayTeam = [[NSMutableArray alloc]init];
         /*
         self.homeTeam = [[NSMutableArray alloc]init];
         self.awayTeam = [[NSMutableArray alloc]init];
@@ -88,25 +92,71 @@ static PlayerManager *instance = nil;
                                     @"Johnson",@"lastName",
                                     @"team 1", @"team",
                                     [NSNumber numberWithInteger:6], @"PlayerNumber",
-                                    [NSNumber numberWithBool:YES], @"isHome",  nil]
+                                    [NSNumber numberWithBool:NO], @"isHome",  nil]
                                    ,
                                    nil];
      
        
         for(NSDictionary *p in players){
             
-            NSInteger index = [[p objectForKey:@"PlayerNumber"]integerValue] - 1;
+            /*
+             NSInteger index = [[p objectForKey:@"PlayerNumber"]integerValue] - 1;
+             
+             if(![[p objectForKey:@"isHome"]boolValue]){
+             
+             index += 25;
+             }
+             Player *newPlayer = [[Player alloc]initWithJSON:p];
+             [self.allTeams replaceObjectAtIndex:index withObject: newPlayer];
+             */
+        
+        if([[p objectForKey:@"isHome"]boolValue]){
             
-            if(![[p objectForKey:@"isHome"]boolValue]){
-                
-                index += 25;
-            }
-            Player *newPlayer = [[Player alloc]initWithJSON:p];
-            [self.allTeams replaceObjectAtIndex:index withObject: newPlayer];
+            [self.homeTeam addObject:[[Player alloc]initWithJSON:p]];
             
+        }else{
+            
+            [self.awayTeam addObject:[[Player alloc]initWithJSON:p]];
         }
+    }
+    
+    NSArray *sortedArrayHome;
+    sortedArrayHome = [self.homeTeam sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
         
+        NSNumber *playerNumber1 = [NSNumber numberWithInteger:[(Player*)a playerNumber]];
+        NSNumber *playerNumber2 = [NSNumber numberWithInteger:[(Player*)b playerNumber]];
         
+        return [playerNumber1 compare:playerNumber2];
+    }];
+    
+    NSArray *sortedArrayAway;
+    sortedArrayAway = [self.homeTeam sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+        
+        NSNumber *playerNumber1 = [NSNumber numberWithInteger:[(Player*)a playerNumber]];
+        NSNumber *playerNumber2 = [NSNumber numberWithInteger:[(Player*)b playerNumber]];
+        
+        return [playerNumber1 compare:playerNumber2];
+    }];
+    
+    
+    for(int i = 0; i < self.homeTeam.count; i++){
+        
+        ((Player*)[self.homeTeam objectAtIndex:i]).playerImage.tag = i;
+    }
+    
+    for(int i = 0; i < self.awayTeam.count; i++){
+        
+        ((Player*)[self.awayTeam objectAtIndex:i]).playerImage.tag = i + 26;
+    }
+    
+    NSArray *sortedArrayAll = [self.homeTeam arrayByAddingObjectsFromArray:self.awayTeam];
+    
+    for(Player *p in sortedArrayAll){
+        
+        [self.allTeams replaceObjectAtIndex:p.playerImage.tag withObject: p];
+    }
+    
+
         /*
         NSMutableDictionary *player = [[NSMutableDictionary alloc]init];
         
