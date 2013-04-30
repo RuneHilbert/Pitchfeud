@@ -39,7 +39,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>accid___.ttf</string>
+		<string>Accidental Presidency</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>

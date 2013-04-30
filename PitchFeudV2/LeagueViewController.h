@@ -12,7 +12,6 @@
 
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 
-- (IBAction)revealMenu:(id)sender;
-- (IBAction)revealChat:(id)sender;
+- (IBAction)modalBack:(id)sender;
 
 @end

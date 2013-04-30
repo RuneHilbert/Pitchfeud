@@ -7,17 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainViewController.h"
 
 @interface MenuViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 
+
+/* Old Methods to go to different topViews
 - (IBAction)goToMain:(id)sender;
 - (IBAction)goToFriends:(id)sender;
 - (IBAction)goToMatches:(id)sender;
 - (IBAction)goToLeagues:(id)sender;
 - (IBAction)goToLeaderboards:(id)sender;
-
+*/
 
 - (IBAction)navBack:(id)sender;
 

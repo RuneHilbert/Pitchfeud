@@ -31,7 +31,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self addChildViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"leagueScroll"]];
-    [self addChildViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"leagueScroll2"]];
 }
 
 - (BOOL)automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers {
@@ -45,7 +44,7 @@
 		[self loadScrollViewWithPage:i];
 	}
 	
-	self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, self.scrollView.frame.size.height * [self.childViewControllers count] );
+	self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, 830);
 }
 
 - (void)loadScrollViewWithPage:(NSInteger)page {
@@ -63,6 +62,7 @@
 	// add the controller's view to the scroll view
     if (controller.view.superview == nil) {
         CGRect frame = self.scrollView.frame;
+        frame.size.height = 830;
         frame.origin.y = frame.size.height * page;
         frame.origin.x = 0;
         controller.view.frame = frame;
@@ -76,14 +76,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)revealMenu:(id)sender
+- (IBAction)modalBack:(id)sender
 {
-    [self.slidingViewController anchorTopViewTo:ECRight];
-}
-
-- (IBAction)revealChat:(id)sender
-{
-    [self.slidingViewController anchorTopViewTo:ECLeft];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

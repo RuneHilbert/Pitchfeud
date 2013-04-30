@@ -48,7 +48,7 @@
     
     [[GameManager Instance]StartNewMatch];
     self.bankLabel.text = [NSString stringWithFormat:@"%d", [GameManager Instance].Bank];
-    
+    self.pointsLabel.text = [NSString stringWithFormat:@"%d",0];
     
     
 }
@@ -305,7 +305,7 @@
 
 -(void)BuyPlayer{
     
-    if(([GameManager Instance].Bank - currentPlayer.price) > 0){
+    if(([GameManager Instance].Bank - currentPlayer.price) >= 0){
         currentPlayer.bought = YES;
         [GameManager Instance].Bank -= currentPlayer.price;
         self.bankLabel.text = [NSString stringWithFormat:@"%d", [GameManager Instance].Bank];

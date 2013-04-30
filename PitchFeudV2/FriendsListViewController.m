@@ -31,7 +31,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self addChildViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"menuScroll"]];
-    [self addChildViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"menuScroll2"]];
 }
 
 - (BOOL)automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers {

@@ -60,10 +60,18 @@
         self.playerImage.userInteractionEnabled = YES;
         
         UILabel *nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, self.playerImage.frame.size.height - 15, self.playerImage.frame.size.width, 15)];
-        nameLabel.text = self.firstName;
+        nameLabel.text = self.lastName;
+        [nameLabel setBackgroundColor:[UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.7f]];
+        [nameLabel setTextColor:[UIColor whiteColor]];
+        [nameLabel setFont: [UIFont fontWithName:@"Arial" size:12.0]];
+        nameLabel.textAlignment = NSTextAlignmentCenter;
         
-        UILabel *numberLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.playerImage.frame.size.width/2, 15)];
+        UILabel *numberLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.playerImage.frame.size.width/4, 15)];
         numberLabel.text = [NSString stringWithFormat:@"%d", self.playerNumber];
+        [numberLabel setBackgroundColor:[UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.7f]];
+        [numberLabel setTextColor:[UIColor whiteColor]];
+        [numberLabel setFont: [UIFont fontWithName:@"Arial" size:14.0]];
+        numberLabel.textAlignment = NSTextAlignmentCenter;
         
         [self.playerImage addSubview:nameLabel];
         [self.playerImage addSubview:numberLabel];

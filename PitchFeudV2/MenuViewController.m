@@ -70,6 +70,7 @@
     }
 }
 
+/* Old methods to change the topViewController
 - (IBAction)goToMain:(id)sender
 {
     [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
@@ -114,7 +115,8 @@
         self.slidingViewController.topViewController.view.frame = frame;
         [self.slidingViewController resetTopView];}];
 }
-
+*/
+ 
 - (IBAction)navBack:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];

@@ -341,10 +341,10 @@
             {
                 //------------------Drawing event on the pitch------------------------
                 
-        
+                CGRect pitchFrame = self.pitchView.frame;
                 //The coordinate values of the feed go from 0-70 and 0-105
-                float y = ([[event objectForKey:@"x_coord"] floatValue]*370)/105;
-                float x = 280 - (([[event objectForKey:@"y_coord"] floatValue]*280)/70);
+                float y = ([[event objectForKey:@"x_coord"] floatValue]*pitchFrame.size.height)/105;
+                float x = pitchFrame.size.width - (([[event objectForKey:@"y_coord"] floatValue]*pitchFrame.size.width)/70);
                // float x = ([[event objectForKey:@"x_coord"] floatValue]*(310-7.5))/105;
                // float y = ([[event objectForKey:@"y_coord"] floatValue]*(204-7.5))/70;
              
