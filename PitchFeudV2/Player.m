@@ -10,14 +10,30 @@
 
 @implementation Player
 
-@synthesize playerImage = _playerImage, firstName = _firstName, lastName = _lastName, shirtName = _shirtName, teamId = _teamId, playerId = _playerId, price = _price, cashGenerated = _cashGenerated, bought = _bought, positionInView = _positionInView;
+@synthesize playerImage = _playerImage, name = _name, team = _team, playerNumber = _playerNumber, bought = _bought, positionInView = _positionInView;
 
 
 -(id) init{
     
     if(self = [super init]){
         
+        
+    }
+    
+    return self;
+}
+
+-(id) initWithJSON:(NSDictionary*)JSONdictioary{
+    
+    if(self = [super init]){
+        
+        self.name = [JSONdictioary objectForKey:@"name"];
+        self.team = [JSONdictioary objectForKey:@"team"];
+        self.playerNumber = [[JSONdictioary objectForKey:@"playerNumber"]integerValue];
+        self.bought = NO;
         self.playerImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"PlayerBWBlack.png"]];
+        
+        self.playerImage.tag = self.playerNumber - 1;
         
         //Under construction...
         /*
@@ -43,6 +59,15 @@
         self.playerImage.frame = frame;
         self.playerImage.userInteractionEnabled = YES;
         
+        UILabel *nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, self.playerImage.frame.size.height - 15, self.playerImage.frame.size.width, 15)];
+        nameLabel.text = self.name;
+        
+        UILabel *numberLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.playerImage.frame.size.width/2, 15)];
+        numberLabel.text = [NSString stringWithFormat:@"%d", self.playerNumber];
+        
+        [self.playerImage addSubview:nameLabel];
+        [self.playerImage addSubview:numberLabel];
+        
         /*
          self.panGesture = [[UIPanGestureRecognizer alloc] init];
          [self.panGesture setMaximumNumberOfTouches:2];
@@ -57,7 +82,6 @@
         [self.tapGesture setNumberOfTapsRequired:1];
         [self.tapGesture setNumberOfTouchesRequired:1];
         [self.playerImage addGestureRecognizer:self.tapGesture];
-        
     }
     
     return self;
@@ -76,12 +100,6 @@
     return YES;
 }
 
--(void)SetDelegateForGestures:(id<UIGestureRecognizerDelegate>)delegate
-{
-    
-    
-    
-}
 
 
 @end

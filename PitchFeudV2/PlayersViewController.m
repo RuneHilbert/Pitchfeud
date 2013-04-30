@@ -305,10 +305,27 @@
 
 -(void)BuyPlayer{
     
-    currentPlayer.bought = YES;
-    [GameManager Instance].Bank -= currentPlayer.price;
-    self.bankLabel.text = [NSString stringWithFormat:@"%d", [GameManager Instance].Bank];
+    if(([GameManager Instance].Bank - currentPlayer.price) > 0){
+        currentPlayer.bought = YES;
+        [GameManager Instance].Bank -= currentPlayer.price;
+        self.bankLabel.text = [NSString stringWithFormat:@"%d", [GameManager Instance].Bank];
+    }else{
+        
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Not enough funds" message:@"You do not have enough currency to buy this player!" delegate:nil cancelButtonTitle:nil otherButtonTitles: nil];
+        [alert show];
+        
+        [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(DismissNotification:) userInfo:alert repeats:NO];
+        
+        [self MovePlayerToInitialPositionInBuyView];
+    }
     
+}
+
+-(void)DismissNotification:(NSTimer*)timer{
+    
+    UIAlertView *alert = [timer userInfo];
+    [alert dismissWithClickedButtonIndex:0 animated:YES];
+    [timer invalidate];
 }
 
 -(void)SellPlayer{

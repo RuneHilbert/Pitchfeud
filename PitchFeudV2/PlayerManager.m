@@ -1,4 +1,4 @@
-//
+;//
 //  PlayerManager.m
 //  PitchFeudV2
 //
@@ -31,6 +31,12 @@ static PlayerManager *instance = nil;
     if (self = [super init]){
         
         self.allTeams = [[NSMutableArray alloc]init];
+        for(int i = 0; i < 51; i++){
+            
+            [self.allTeams addObject:[NSNull null]];
+            
+        }
+        /*
         self.homeTeam = [[NSMutableArray alloc]init];
         self.awayTeam = [[NSMutableArray alloc]init];
         
@@ -56,6 +62,29 @@ static PlayerManager *instance = nil;
             testPlayer.price = 200;
             [self.allTeams replaceObjectAtIndex:i withObject:testPlayer];
         }
+        */
+        NSMutableArray *players = [[NSMutableArray alloc]init];
+        NSMutableDictionary *playerdic = [[NSMutableDictionary alloc]init];
+        [playerdic setObject:@"John" forKey:@"name"];
+        [playerdic setObject:[NSNumber numberWithInteger:1] forKey:@"playerNumber"];
+        [playerdic setObject:@"team 1" forKey:@"team"];
+        [playerdic setObject:[NSNumber numberWithBool:YES] forKey:@"isHome"];
+        
+        [players addObject:playerdic];
+        
+        for(NSDictionary *p in players){
+            
+            NSInteger index = [[playerdic objectForKey:@"isHome"]integerValue] - 1;
+            
+            if(![[playerdic objectForKey:@"isHome"]boolValue]){
+                
+                index += 25;
+            }
+            Player *newPlayer = [[Player alloc]initWithJSON:p];
+            [self.allTeams replaceObjectAtIndex:index withObject: newPlayer];
+            
+        }
+        
         
         /*
         NSMutableDictionary *player = [[NSMutableDictionary alloc]init];
@@ -78,32 +107,6 @@ static PlayerManager *instance = nil;
     return self;
 }
 
--(void)CheckForPointsWithName:(NSString*)playerFirstName AndLastName:(NSString*)playerLastName AndPoints:(NSInteger) points{
-    
-    if(playerFirstName != nil && playerLastName != nil){
-        
-        for(NSMutableDictionary *player in self.homeTeam){
-            
-            NSString *firstName = [player valueForKey:@"first_name"];
-            NSString *lastName = [player valueForKey:@"last_name"];
-            
-            
-            if([firstName isEqualToString:playerFirstName] && [lastName isEqualToString:playerLastName]){
-                
-                self.points += points;
-                NSLog(@"Got %d points", points);
-                [[NSNotificationCenter defaultCenter]postNotificationName:@"UpdatePointsLabel" object:self];
-                
-                break;
-            }
-            
-            NSLog(@"Player not bought!");
-        }
-    }else{
-        
-        NSLog(@"Player is nil!");
-    }
-}
 
 
 @end

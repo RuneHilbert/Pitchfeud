@@ -609,6 +609,35 @@
     
 }
 
+-(void)CheckForPointsWithName:(NSString*)playerFirstName AndLastName:(NSString*)playerLastName AndPoints:(NSInteger) points{
+    
+    if(playerFirstName != nil && playerLastName != nil){
+        
+        for(Player *player in [PlayerManager Instance].allTeams){
+            
+            if(!player.bought)continue;
+            
+            NSString *firstName = [player valueForKey:@"first_name"];
+            NSString *lastName = [player valueForKey:@"last_name"];
+            
+            
+            if([firstName isEqualToString:playerFirstName] && [lastName isEqualToString:playerLastName]){
+                
+             //   self.points += points;
+                NSLog(@"Got %d points", points);
+                [[NSNotificationCenter defaultCenter]postNotificationName:@"UpdatePointsLabel" object:self];
+                
+                break;
+            }
+            
+            NSLog(@"Player not bought!");
+        }
+    }else{
+        
+        NSLog(@"Player is nil!");
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {
