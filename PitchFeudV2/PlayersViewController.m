@@ -338,7 +338,7 @@
 
 -(void)UpdatePointsLabel{
     
-    self.pointsLabel.text = [NSString stringWithFormat:@"%d",[PlayerManager Instance].points];
+    self.pointsLabel.text = [NSString stringWithFormat:@"%d",[GameManager Instance].Score];
 }
 
 // Delegate method - return YES to allow 2 different gesture recognizers at once

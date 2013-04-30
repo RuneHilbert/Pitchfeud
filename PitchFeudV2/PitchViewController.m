@@ -320,7 +320,9 @@
         if(![pointsReason isEqualToString:@""])
         {
             
-            [[PlayerManager Instance]CheckForPointsWithName:[event objectForKey:@"offensive_player_first_name"] AndLastName:[event objectForKey:@"offensive_player_last_name"] AndPoints:[pointsCommited integerValue]];
+            [self CheckForPointsWithName:[event objectForKey:@"offensive_player_full_first_name"] AndLastName:[event objectForKey:@"offensive_player_full_last_name"] AndPoints:[pointsCommited integerValue]];
+            
+            [self CheckForPointsWithName:[event objectForKey:@"defensive_player_full_first_name"] AndLastName:[event objectForKey:@"defensive_player__full_last_name"] AndPoints:[pointsCommited integerValue]];
             
             [self.playsTableData addObject:@{ @"time" : minutesStr, @"desc" : pointsReason, @"image" : @"Football.png" }];
             
@@ -615,17 +617,13 @@
         
         for(Player *player in [PlayerManager Instance].allTeams){
             
-            if(!player.bought)continue;
+            if(player == (Player*)[NSNull null] || !player.bought)continue;
             
-            NSString *firstName = [player valueForKey:@"first_name"];
-            NSString *lastName = [player valueForKey:@"last_name"];
-            
-            
-            if([firstName isEqualToString:playerFirstName] && [lastName isEqualToString:playerLastName]){
+            if([player.firstName isEqualToString:playerFirstName] && [player.lastName isEqualToString:playerLastName]){
                 
-             //   self.points += points;
+                [GameManager Instance].Score += points;
                 NSLog(@"Got %d points", points);
-                [[NSNotificationCenter defaultCenter]postNotificationName:@"UpdatePointsLabel" object:self];
+                [[NSNotificationCenter defaultCenter]postNotificationName:@"UpdatePointsLabel" object:nil];
                 
                 break;
             }

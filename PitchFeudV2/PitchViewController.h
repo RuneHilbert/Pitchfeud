@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ConnectionManager.h"
 #import "PlayerManager.h"
+#import "GameManager.h"
 #import "LineView.h"
 
 @interface PitchViewController : UIViewController{
