@@ -99,6 +99,7 @@
     
     
     NSLog(@"INFO");
+    self.playerImage.transform = CGAffineTransformMakeRotation(M_PI_2);
     
 }
 
